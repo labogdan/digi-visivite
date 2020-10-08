@@ -1,0 +1,134 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'atb-include-rich-text'   %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% comment %}Heading{% endcomment %}
+{% assign title = atb_title %}
+{% assign heading_font = atb_heading_font %}
+{% assign heading_color = atb_heading_color %}
+{% assign heading_alignment = atb_heading_alignment %}
+{% assign heading_size = atb_heading_size %}
+{% comment %}Text{% endcomment %}
+{% assign text = atb_text %}
+{% assign text_font = atb_text_font %}
+{% assign text_color = atb_text_color %}
+{% assign text_alignment = atb_text_alignment %}
+{% assign text_size = atb_text_size %}
+{% assign columns = atb_columns %}
+{% comment %}Button{% endcomment %}
+{% assign button_label = atb_button_label %}
+{% assign button_link = atb_button_link %}
+{% assign button_style = atb_button_style %}
+{% assign button_size = atb_button_size %}
+{% assign button_alignment = atb_button_alignment %}
+{% comment %}Background{% endcomment %}
+{% assign background = atb_background %}
+{% assign gradient = atb_gradient %}
+{% assign gradient_rotation = atb_gradient_rotation %}
+{% comment %}Layout{% endcomment %}
+{% assign width = atb_width %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% assign padding_left = atb_padding_left %}
+{% assign padding_right = atb_padding_right %}
+{% assign animation = atb_animation | default: 'none' %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign heading_alpha = heading_color | color_extract: 'alpha' %}
+{% assign text_alpha = text_color | color_extract: 'alpha' %}
+{% assign background_alpha = background | color_extract: 'alpha' %}
+{% assign gradient_alpha = gradient | color_extract: 'alpha' %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+
+  .section {
+    background-image: linear-gradient({{ gradient_rotation }}deg, transparent, {{ gradient }});
+    background-color: {%- if background_alpha != 0 -%}{{ background }}{%- endif -%};
+  }
+
+  .rich-text__heading {
+    font-size: {{ heading_size }}px;
+    color: {%- if heading_alpha != 0 -%}{{ heading_color }}{%- else -%}{{ settings.heading_color }}{%- endif -%};
+    font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+    font-weight: {{ heading_font.weight }};
+    font-style: {{ heading_font.style }};
+  }
+
+  .rich-text__text {
+    font-size: {{ text_size }}px;
+    color: {%- if text_alpha != 0 -%}{{ text_color }}{%- else -%}{{ settings.regular_color }}{%- endif -%};
+    font-family: {{ text_font.family }}, {{ text_font.fallback_families }};
+    font-weight: {{ text_font.weight }};
+    font-style: {{ text_font.style }};
+  }
+{%- endcapture -%}
+
+{% style %}
+  {{ heading_font | font_face }}
+  {{ text_font | font_face }}
+
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    padding-left: {{ padding_left }}px;
+    padding-right: {{ padding_right }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% elsif width == 'half' %}
+      width: 50%;
+    {% endif %}
+  }
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<div id="shop1" name="shop1"></div>
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}
+                {% if background_alpha != 0 or gradient_alpha != 0  %}
+                  has-background
+                {% endif %}
+                "
+          {% if animation != "none" %}
+            data-scroll-class="{{ animation }}"
+          {% endif %}>
+  <div class="container
+              has-limit
+              ">
+    <div class="columns one-whole">
+      <div class="rich-text__content card-content">
+
+        {% if title != blank %}
+          <h2 class="rich-text__heading title text-align-{{ heading_alignment }} {% if heading_size > 50 %}mobile-shrink-text{% endif %}"><span>{{ title }}</span></h2>
+        {% endif %}
+
+        {% if text != blank %}
+          <div class="rich-text__text has-columns--{{ columns }} text-align-{{ text_alignment }} content {% if text_size > 35 %}mobile-shrink-text{% endif %}">
+            {{ text }}
+          </div>
+        {% endif %}
+
+        {% if button_label != blank %}
+          <div class="buttons is-{{ button_alignment }}">
+            {% include 'atb-button' , label: button_label, href: button_link, style: button_style, type: "link"  %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

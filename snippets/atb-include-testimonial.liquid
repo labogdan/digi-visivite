@@ -1,0 +1,139 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'atb-include-testimonial'   %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% comment %}Layout{% endcomment %}
+{% assign width = atb_width %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% assign animation = atb_animation | default: 'none' %}
+{% assign card_text = atb_card_text %}
+{% assign card_background = atb_card_background %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign card_text_alpha = card_text | color_extract: 'alpha' %}
+{% assign card_background_alpha = card_background | color_extract: 'alpha' %}
+
+{% capture section_css -%}
+
+.testimonial-block {
+  background-color: {%- if card_background_alpha != 0 -%}{{ card_background }}{%- endif -%};
+}
+
+.testimonial__description {
+  color: {%- if card_text_alpha != 0 -%}{{ card_text }}{%- endif -%};
+}
+
+{%- endcapture -%}
+
+
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}
+                {% if blocks.size == 3 %}mobile-slider{% endif %}
+                {% if blocks.size <= 3 %}desktop-slider--disabled{% endif %}
+                "
+          {% if animation != "none" %}
+            data-scroll-class="{{ animation }}"
+          {% endif %}>
+
+  {% if blocks.size > 2 %}
+    <div class="container">
+      <div class="testimonial__nav-wrapper one-whole column is-flex">
+        <div class="testimonial__nav testimonial__nav--prev">
+          {% include settings.icon, name: 'left-arrow' %}
+        </div>
+        <div class="testimonial__nav testimonial__nav--next ">
+          {% include settings.icon, name: 'right-arrow' %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="testimonials container" {% if blocks.size > 2 %}data-testimonial-slider{% endif %}>
+    {% for block0 in blocks %}
+
+    {% comment %} Is the color set to transparent? {% endcomment %}
+    {% assign info_text_alpha = block_info_text[forloop.index0] | color_extract: 'alpha' %}
+    {% assign info_background_alpha = block_info_background[forloop.index0] | color_extract: 'alpha' %}
+
+    {% if blocks.size >= 3 %}
+      {% assign column-value = 'one-third' %}
+    {% else %}
+      {% assign column-value = blocks.size %}
+    {% endif %}
+
+    <div id="shopify-section-{{ blocks[forloop.index0] }}"
+         class="testimonial-block
+                block--{{ blocks[forloop.index0] }}
+                column
+                {% if atb_enable_images == false %}no-testimonial-image{% endif %}
+                testimonial-border--{{ atb_show_border }}
+                testimonial-align--{{ atb_card_alignment }}
+                {% include 'atb-column-width' , value: column-value  %}
+                medium-down--one-whole" data-testimonial-index={{ forloop.index0 }} {{ block.shopify_attributes }}>
+
+      <style>
+          .block--{{ blocks[forloop.index0] }} .testimonial__name {
+            color: {%- if info_text_alpha != 0 -%}{{ block_info_text[forloop.index0] }}{%- endif -%};
+            background-color: {%- if info_background_alpha != 0 -%}{{ block_info_background[forloop.index0] }}{% else %}{{ settings.shop_bg_color }}{%- endif -%};
+          }
+      </style>
+
+      <div class="testimonial__description">
+          {{ block_quote[forloop.index0] }}
+
+      </div>
+      <div class="testimonial__name">
+
+        {{ block_text[forloop.index0] }}
+
+        <div class="testimonial__image has-image-crop image-style--{{ atb_crop_shape }}">
+            {% if atb_enable_images == true %}
+              {% if block_image[forloop.index0] != blank %}
+                {% include 'atb-image-element' , image: block_image[forloop.index0], alt: block_image[forloop.index0].alt  %}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            {% endif %}
+          </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% comment %}JavaScript{% endcomment %}
+<script
+  type="application/json"
+  data-section-id="{{ object.id }}"
+  data-section-data
+>
+  {
+  }
+</script>
+<script data-theme-editor-load-script src="{{ 'z__jsTestimonials.js' | asset_url }}"></script>

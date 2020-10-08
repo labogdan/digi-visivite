@@ -1,0 +1,39 @@
+{% include 'sca_freegift_price' with product %}
+<div class="product-thumbnail">
+  <div class="product-info-contain">
+    {% if settings.display_vendor %}
+      <span class="product-thumbnail__vendor">{{ product.vendor }}</span>
+    {% endif %}
+
+    <div class="title-wrapper"><a href="{{ product.url | within: collection }}" class="product-thumbnail__title">{{ product.title }}</a>
+
+    {% unless product.metafields.global.collection_description == blank %}
+      <div class="product-thumbnail__subtitle">{{product.metafields.global.collection_description}}</div>
+      {% endunless %}</div>   
+  </div>
+  
+
+  {% if collection_handles contains 'coming-soon' %}
+    <span>{{ 'collections.general.coming_soon' | t }}</span>
+  {% else %}
+    <span class="product-thumbnail__price price {% if sca_compare_at_price > sca_price %}sale{% endif %}">
+      {% if product.available %}
+        {% if sca_price_varies and sca_price_min > 0 %}
+          <small><em>{{ 'products.general.from' | t }}</em></small>
+        {% endif %}
+        {% if sca_price_min > 0 %}
+          <span class="money">{{ sca_price_min | money }}</span>
+        {% else %}
+          {{ settings.free_price_text }}
+        {% endif %}
+        {% if sca_compare_at_price > sca_price %}
+          <span class="product-thumbnail__was-price was-price">
+            <span class="money">{{ sca_compare_at_price | money }}</span>
+          </span>
+        {% endif %}
+      {% else %}
+        <span class="product-thumbnail__sold-out sold-out">{{ 'products.product.sold_out' | t }}</span>
+      {% endif %}
+    </span>
+  {% endif %}
+</div>

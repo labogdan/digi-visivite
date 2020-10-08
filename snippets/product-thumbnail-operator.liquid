@@ -1,0 +1,69 @@
+{% if related_products == true %}
+  {% assign hover_enabled = block.settings.show_related_products_title_on_hover %}
+{% else %}
+  {% assign hover_enabled = settings.thumbnail_hover_enabled %}
+{% endif %}
+
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+<div class="one-whole thumbnail product__thumbnail product__grid-item thumbnail__hover-overlay--false has-padding-bottom"
+    {% if section.settings.pagination_type != 'basic_pagination' %}
+      data-load-more--grid-item
+    {% endif %}>
+    <div class="product-wrap {% if product.images[1] != blank and settings.show_secondary_image == true %}swap--true{% endif %}">
+
+      {% assign collection_handles = product.collections | map: 'handle' %}
+      {% if product.featured_image.alt contains 'youtube' or image.alt contains 'vimeo' %}
+        {% assign alt_text = product.title %}
+      {% else %}
+        {% assign alt_text = product.featured_image.alt %}
+      {% endif %}
+
+        {% if type == 'block' %}
+          {% assign image_crop = block.settings.image_crop %}
+        {% else %}
+          {% assign image_crop = section.settings.image_crop %}
+        {% endif %}
+
+        <div class="product-image__wrapper">
+
+          <div class="image__container product__imageContainer">
+
+            <a href="{{ product.url | within: collection }}">
+
+              {% if settings.stickers_enabled %}
+                {% include 'product-thumbnail__sticker' %}
+              {% endif %}
+
+              {% include 'image-element-operator', image: product.featured_image, alt: alt_text, object_fit: align_height, max_height: height %}
+              {% if product.images[1] != blank and settings.show_secondary_image == true %}
+                <div class="image__container">
+                  <img src="{{ product.images[1] | img_url: '800x' }}"
+                  class="secondary swap--visible lazyload"
+                  alt="{{ alt_text | escape }}"
+                  />
+                </div>
+              {% endif %}
+            </a>
+          </div>
+        </div>
+
+        <div class="thumbnail__caption text-align-left">
+          {% include 'product-thumbnail__product-info-operator' %}
+        </div>
+    </div>
+
+    {% include 'product-thumbnail__swatch' %}
+
+    {% if hover_enabled == false %}
+      {% if settings.enable_shopify_collection_badges and settings.enable_shopify_review_comments %}
+      <div class="product-thumbnail__review-stars is-flex is-justify-{{ settings.thumbnail_text_alignment }}">
+        <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: inline-block;">{{ product.metafields.stamped.badge }}</span>
+      </div>
+      {% endif %}
+    {% endif %}
+  </div>

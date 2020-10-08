@@ -1,0 +1,401 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Contact",
+  "class": "contact-section jsCustomContactForm",
+  "max_blocks": 10,
+  "id": "index__contact-form",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Content",
+      "info": ""
+    },
+    {
+      "type": "image_picker",
+      "id": "atb_content_image",
+      "label": "Image",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_title",
+      "label": "Heading",
+      "default": "Get in touch today",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "atb_content_text",
+      "label": "Text",
+      "default": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.</p>",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_social_enable",
+      "label": "Display social media icons",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Contact form",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_background",
+      "label": "Background",
+      "default": "#E5E5E5",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_text_color",
+      "label": "Text",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_form_position",
+      "label": "Form position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "default": 40,
+      "min": 0,
+      "max": 80,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "default": 40,
+      "min": 0,
+      "max": 80,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_animation",
+      "label": "Animation",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "slideInLeft",
+          "label": "Slide in left"
+        },
+        {
+          "value": "slideInRight",
+          "label": "Slide in right"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "blocks",
+      "label": "Block ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": "",
+      "repeatable": "Checkbox"
+    },
+    {
+      "type": "text",
+      "id": "block_label",
+      "label": "Title",
+      "default": "Select all that apply",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "block_required",
+      "label": "Field is required",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_1",
+      "label": "Option 1",
+      "default": "Option 1",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_2",
+      "label": "Option 2",
+      "default": "Option 2",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_3",
+      "label": "Option 3",
+      "default": "Option 3",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_4",
+      "label": "Option 4",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_5",
+      "label": "Option 5",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_6",
+      "label": "Option 6",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_7",
+      "label": "Option 7",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_8",
+      "label": "Option 8",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_9",
+      "label": "Option 9",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_options_10",
+      "label": "Option 10",
+      "repeatable": "Checkbox",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "Email field must be included.",
+      "repeatable": "Email-(required)",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_text",
+      "label": "Text",
+      "default": "<p>Use this field to display&nbsp;text of any kind, such as&nbsp;standard reply times for inquiries.</p>",
+      "repeatable": "Paragraph",
+      "info": ""
+    }
+  ],
+  "warnings": [
+    "repeating checkbox fields may not be properly handled",
+    "some fields may be named the same"
+  ]
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_content_image' -%}
+{%- assign atb_content_image = val -%}
+{%- include 'atb-render' field:'atb_title' -%}
+{%- assign atb_title = val -%}
+{%- include 'atb-render' field:'atb_content_text' -%}
+{%- assign atb_content_text = val -%}
+{%- include 'atb-render' field:'atb_social_enable' -%}
+{%- assign atb_social_enable = val -%}
+{%- include 'atb-render' field:'atb_text_alignment' -%}
+{%- assign atb_text_alignment = val -%}
+{%- include 'atb-render' field:'atb_background' -%}
+{%- assign atb_background = val -%}
+{%- include 'atb-render' field:'atb_text_color' -%}
+{%- assign atb_text_color = val -%}
+{%- include 'atb-render' field:'atb_form_position' -%}
+{%- assign atb_form_position = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'atb_animation' -%}
+{%- assign atb_animation = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- include 'atb-render' field:'blocks' -%}
+{%- assign blocks = val -%}
+{%- include 'atb-render' field:'block_label' -%}
+{%- assign block_label = val -%}
+{%- include 'atb-render' field:'block_required' -%}
+{%- assign block_required = val -%}
+{%- include 'atb-render' field:'block_options_1' -%}
+{%- assign block_options_1 = val -%}
+{%- include 'atb-render' field:'block_options_2' -%}
+{%- assign block_options_2 = val -%}
+{%- include 'atb-render' field:'block_options_3' -%}
+{%- assign block_options_3 = val -%}
+{%- include 'atb-render' field:'block_options_4' -%}
+{%- assign block_options_4 = val -%}
+{%- include 'atb-render' field:'block_options_5' -%}
+{%- assign block_options_5 = val -%}
+{%- include 'atb-render' field:'block_options_6' -%}
+{%- assign block_options_6 = val -%}
+{%- include 'atb-render' field:'block_options_7' -%}
+{%- assign block_options_7 = val -%}
+{%- include 'atb-render' field:'block_options_8' -%}
+{%- assign block_options_8 = val -%}
+{%- include 'atb-render' field:'block_options_9' -%}
+{%- assign block_options_9 = val -%}
+{%- include 'atb-render' field:'block_options_10' -%}
+{%- assign block_options_10 = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'block_text' -%}
+{%- assign block_text = val -%}
+{%- if atb_social_enable == blank -%}
+{%- assign atb_social_enable = false -%}
+{%- else -%}
+{%- assign atb_social_enable = true -%}
+{%- endif -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign atb_content_image_key = atb_content_image| split: '/files/' | last -%}{%- assign atb_content_image = images[atb_content_image_key] -%}{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section contact-section jsCustomContactForm">
+{% comment %}
+** Contact form - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% include 'atb-include-contact-form'   %}
+
+
+</section>

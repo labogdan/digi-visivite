@@ -1,0 +1,70 @@
+{% if type == 'blog' %}
+  {% assign title = blog.title %}
+  {% assign image = atb_image %}
+{% elsif type =='cart' %}
+  {%- capture title -%}
+    {{'cart.general.title' | t }}
+  {%- endcapture -%}
+  {% assign subtitle = atb_subtitle %}
+  {% assign image = atb_image %}
+{% elsif type == 'article' %}
+  {% assign title = article.title %}
+  {% assign image = article.image %}
+{% elsif type == 'page' %}
+  {% assign title = page.title %}
+  {% assign image = atb_image %}
+{% elsif type == 'contact' %}
+  {% assign title = page.title %}
+  {% assign image = atb_image %}
+  {% assign subtitle = atb_subtitle %}
+{% elsif type == 'collection' %}
+  {% assign title = collection.title %}
+  {% assign subtitle = atb_subtitle %}
+  {% if atb_image %}
+    {% assign image = atb_image %}
+  {%- elsif collection.image -%}
+    {% assign image = collection.image %}
+  {%- else %}
+    {% assign image = collection.products.first.featured_image %}
+  {% endif %}
+{% elsif type == '404' %}
+  {% capture title %}
+    {{ 'general.404.title' | t }}
+  {% endcapture %}
+  {% assign image = atb_image %}
+{% endif %}
+
+<style>
+  .hide-when-banner-enabled {
+    display: none;
+  }
+</style>
+
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}">
+  <div class="container
+              {% if width == 'wide' %}
+                equal-columns--outside-trim
+              {% endif %}">
+    <div class="banner__wrapper
+                one-whole
+                column
+                dark-overlay-{{ atb_image_darken }}
+                is-{{ atb_banner_height }}">
+      {% if collection.image != blank %}
+      	{% include 'atb-image-element-collection' , image: image, alt: image.alt, stretch_width: true  %}
+      {% else %}
+        {% include 'atb-image-element' , image: image, alt: image.alt, stretch_width: true  %}
+      {% endif %}
+      <div class="banner__content card-content">
+        <div class="banner__text text-align-center">
+          <h1 class="banner__heading title">{{ title }}</h1>
+          {% if subtitle != blank %}
+            <p class="banner__subheading subtitle">{{ subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

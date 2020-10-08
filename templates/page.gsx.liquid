@@ -1,0 +1,19 @@
+{% if cart.item_count > 0 %}
+
+    <script type="text/javascript">// <![CDATA[
+    GSXConf = {
+        MerchantId: '2458871',
+        isIframe: true,
+        LocalShipping: '0',
+        LocalShippingEXP: '0',
+        ImageCdn: true,
+        SkuRestricted: ''.split(',')
+    };
+    // ]]></script>
+    <div id="gsxContent"></div>
+    <script type="text/javascript" src="https://shopify.globalshopex.com/cdn/script/GSX_Base.js"></script>
+{% else %}
+<div id="globalshopex_checkout">
+    <h1>{{ "cart.general.empty" | t }}</h1>
+</div>
+{% endif %}

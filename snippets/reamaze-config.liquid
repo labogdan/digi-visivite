@@ -1,0 +1,72 @@
+<!-- Reamaze Config file - DO NOT REMOVE -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.account = "visivite";
+</script>
+
+<!-- reamaze_cue_2990_s -->
+<!-- Cue - Free Gifts Today -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "2990",
+    name: "Free Gifts Today",
+    message: "Don't leave! Save $6.95 regular shipping when you buy 3 items today.",
+    sound: true,
+    transient: true,
+    botsEnabled: false,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "2020-09-01T03:30:00.000Z",
+    user: {
+      type: "team"
+    },
+    buttons: [
+      {
+        text: "SHOP VISIVITE FORMULAS",
+        url: "https://www.visivite.com/#shop1",
+      },
+    ],
+    rules: [
+      {
+        type: "leavingSite",
+        op: "isTrue",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_2990_e -->
+
+<!-- reamaze_embeddable_10360_s -->
+<!-- Embeddable - VisiVite Chat / Contact Form Shoutbox -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = 'visivite';
+  _support['ui']['contactMode'] = 'mixed';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['styles'] = {
+    widgetColor: 'rgb(0, 129, 201)',
+    gradient: true,
+  };
+  _support['ui']['widget'] = {
+    displayOn: 'all',
+    label: {
+      text: 'Let us know if you have any questions! &#128522;',
+      mode: "notification",
+      delay: 60,
+      duration: 15,
+    },
+    position: 'bottom-right',
+    size: 65,
+    mobilePosition: 'bottom-right'
+  };
+  _support['apps'] = {
+    recentConversations: {},
+    faq: {"enabled":true},
+    orders: {"enabled":true}
+  };
+</script>
+<!-- reamaze_embeddable_10360_e -->
+

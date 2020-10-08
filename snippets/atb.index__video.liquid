@@ -1,0 +1,541 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Video",
+  "class": "video-section jsVideo",
+  "id": "index__video",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Video",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "16:9",
+          "label": "16:9"
+        },
+        {
+          "value": "4:3",
+          "label": "4:3"
+        }
+      ],
+      "default": "16:9",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_autoplay",
+      "label": "Autoplay on compatible devices",
+      "info": "",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_autoloop",
+      "label": "Autoloop video",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_iframe_video_type",
+      "label": "YouTube or Vimeo video URL Type",
+      "default": "youtube",
+      "options": [
+        {
+          "value": "youtube",
+          "label": "Youtube"
+        },
+        {
+          "value": "vimeo",
+          "label": "Vimeo"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atb_iframe_video_id",
+      "label": "YouTube or Vimeo ID",
+      "default": "_9VUPq3SxOc"
+    },
+    {
+      "type": "text",
+      "id": "atb_html5_video",
+      "label": "HTML5 MP4/OGV File URL",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_controls",
+      "label": "Enable HTML5 video controls",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Content",
+      "info": ""
+    },
+    {
+      "type": "image_picker",
+      "id": "atb_image",
+      "label": "Image",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_pretext",
+      "label": "Preheading",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_title",
+      "label": "Heading",
+      "default": "Featured video",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_subtitle",
+      "label": "Subheading",
+      "default": "Embed a Youtube or Vimeo video.",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_pretext_color",
+      "label": "Preheading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_heading_color",
+      "label": "Heading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_subheading_color",
+      "label": "Subheading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_horizontal_text_position",
+      "label": "Horizontal position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_vertical_text_position",
+      "label": "Vertical position",
+      "options": [
+        {
+          "value": "start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_button_label",
+      "label": "Button label",
+      "default": "Play video",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_button_style",
+      "label": "Button style",
+      "default": "button--secondary",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--link-style",
+          "label": "Link style"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Overlay",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_overlay_style",
+      "label": "Overlay style",
+      "default": "text_only",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full"
+        },
+        {
+          "value": "text_only",
+          "label": "Text only"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_video_overlay_color",
+      "label": "Overlay",
+      "default": "#ffffff",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_gradient",
+      "label": "Gradient",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_gradient_rotation",
+      "label": "Gradient rotation",
+      "min": 0,
+      "max": 180,
+      "default": 180,
+      "unit": "deg",
+      "step": 10,
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_background_opacity",
+      "label": "Background opacity",
+      "default": 77,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_text_width",
+      "label": "Text width",
+      "min": 40,
+      "max": 100,
+      "default": 70,
+      "unit": "%",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "wide",
+      "options": [
+        {
+          "value": "half",
+          "label": "Half"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_left",
+      "label": "Left spacing",
+      "min": 0,
+      "max": 80,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_right",
+      "label": "Right spacing",
+      "default": 0,
+      "min": 0,
+      "max": 80,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_animation",
+      "label": "Animation",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "slideInLeft",
+          "label": "Slide in left"
+        },
+        {
+          "value": "slideInRight",
+          "label": "Slide in right"
+        },
+        {
+          "value": "zoomIn",
+          "label": "Zoom in"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    }
+  ],
+  "warnings": []
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_aspect_ratio' -%}
+{%- assign atb_aspect_ratio = val -%}
+{%- include 'atb-render' field:'atb_autoplay' -%}
+{%- assign atb_autoplay = val -%}
+{%- include 'atb-render' field:'atb_autoloop' -%}
+{%- assign atb_autoloop = val -%}
+{%- include 'atb-render' field:'atb_html5_video' -%}
+{%- assign atb_html5_video = val -%}
+{%- include 'atb-render' field:'atb_controls' -%}
+{%- assign atb_controls = val -%}
+{%- include 'atb-render' field:'atb_image' -%}
+{%- assign atb_image = val -%}
+{%- include 'atb-render' field:'atb_pretext' -%}
+{%- assign atb_pretext = val -%}
+{%- include 'atb-render' field:'atb_title' -%}
+{%- assign atb_title = val -%}
+{%- include 'atb-render' field:'atb_subtitle' -%}
+{%- assign atb_subtitle = val -%}
+{%- include 'atb-render' field:'atb_pretext_color' -%}
+{%- assign atb_pretext_color = val -%}
+{%- include 'atb-render' field:'atb_heading_color' -%}
+{%- assign atb_heading_color = val -%}
+{%- include 'atb-render' field:'atb_subheading_color' -%}
+{%- assign atb_subheading_color = val -%}
+{%- include 'atb-render' field:'atb_horizontal_text_position' -%}
+{%- assign atb_horizontal_text_position = val -%}
+{%- include 'atb-render' field:'atb_vertical_text_position' -%}
+{%- assign atb_vertical_text_position = val -%}
+{%- include 'atb-render' field:'atb_text_align' -%}
+{%- assign atb_text_align = val -%}
+{%- include 'atb-render' field:'atb_button_label' -%}
+{%- assign atb_button_label = val -%}
+{%- include 'atb-render' field:'atb_button_style' -%}
+{%- assign atb_button_style = val -%}
+{%- include 'atb-render' field:'atb_overlay_style' -%}
+{%- assign atb_overlay_style = val -%}
+{%- include 'atb-render' field:'atb_video_overlay_color' -%}
+{%- assign atb_video_overlay_color = val -%}
+{%- include 'atb-render' field:'atb_gradient' -%}
+{%- assign atb_gradient = val -%}
+{%- include 'atb-render' field:'atb_gradient_rotation' -%}
+{%- assign atb_gradient_rotation = val -%}
+{%- include 'atb-render' field:'atb_background_opacity' -%}
+{%- assign atb_background_opacity = val -%}
+{%- include 'atb-render' field:'atb_text_width' -%}
+{%- assign atb_text_width = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'atb_padding_left' -%}
+{%- assign atb_padding_left = val -%}
+{%- include 'atb-render' field:'atb_padding_right' -%}
+{%- assign atb_padding_right = val -%}
+{%- include 'atb-render' field:'atb_animation' -%}
+{%- assign atb_animation = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- if atb_autoplay == blank -%}
+{%- assign atb_autoplay = false -%}
+{%- else -%}
+{%- assign atb_autoplay = true -%}
+{%- endif -%}
+{%- if atb_autoloop == blank -%}
+{%- assign atb_autoloop = false -%}
+{%- else -%}
+{%- assign atb_autoloop = true -%}
+{%- endif -%}
+{%- if atb_controls == blank -%}
+{%- assign atb_controls = false -%}
+{%- else -%}
+{%- assign atb_controls = true -%}
+{%- endif -%}
+{%- include 'atb-render' field:'atb_iframe_video_id' -%}
+{%- assign atb_iframe_video_id = val -%}
+{%- include 'atb-render' field:'atb_iframe_video_type' -%}
+{%- assign atb_iframe_video_type = val -%}
+{%- assign atb_gradient_rotation = atb_gradient_rotation | plus: 0 -%}
+{%- assign atb_background_opacity = atb_background_opacity | plus: 0 -%}
+{%- assign atb_text_width = atb_text_width | plus: 0 -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign atb_padding_left = atb_padding_left | plus: 0 -%}
+{%- assign atb_padding_right = atb_padding_right | plus: 0 -%}
+{%- assign atb_image_key = atb_image| split: '/files/' | last -%}{%- assign atb_image = images[atb_image_key] -%}{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section video-section jsVideo">
+{% comment %}
+** Video - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% include 'atb-include-video'   %}
+
+
+</section>

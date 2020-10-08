@@ -1,0 +1,2508 @@
+{
+  "current": {
+    "show_announcement_bar": true,
+    "show_popup": false,
+    "show_fixed_message": false,
+    "header_layout": "classic",
+    "footer_layout": "promotional",
+    "product_layout": "classic",
+    "image_loading_style": "fade-in",
+    "logo_mobile": "",
+    "mobile_logo_width": 200,
+    "logo_mobile_position": "center",
+    "logo_menu_position": "left",
+    "show_search_icon_mobile": true,
+    "icon_style": "icons",
+    "mobile_menu_background_color": "rgba(0,0,0,0)",
+    "mobile_menu_opacity": 100,
+    "mobile_menu_link_color": "rgba(0,0,0,0)",
+    "mobile_menu_link_hover_color": "rgba(0,0,0,0)",
+    "button_primary_padding": "regular",
+    "button_primary_bg_color": "#0081ca",
+    "button_primary_bg_color_transparency": 100,
+    "button_primary_border_color": "rgba(0,0,0,0)",
+    "button_primary_text_color": "#ffffff",
+    "button_primary_bg_color--highlight": "#0081ca",
+    "button_primary_bg_color_transparency--highlight": 100,
+    "button_primary_border_color--highlight": "rgba(0,0,0,0)",
+    "button_primary_text_color--highlight": "#ffffff",
+    "button_primary_border_radius": 35,
+    "button_secondary_padding": "regular",
+    "button_secondary_bg_color": "#ffffff",
+    "button_secondary_bg_color_transparency": 100,
+    "button_secondary_border_color": "#0081ca",
+    "button_secondary_text_color": "#0081ca",
+    "button_secondary_bg_color--highlight": "#0081ca",
+    "button_secondary_bg_color_transparency--highlight": 100,
+    "button_secondary_border_color--highlight": "#000000",
+    "button_secondary_text_color--highlight": "#ffffff",
+    "button_secondary_border_radius": 35,
+    "button_link_padding": "small",
+    "button_link_text_color": "#000000",
+    "button_link_text_color--highlight": "#ccc",
+    "button_link_underline_style": "solid",
+    "button_link_underline_thickness": 1,
+    "button_cart_padding": "regular",
+    "button_cart_bg_color": "#0081ca",
+    "button_cart_bg_color--highlight": "#0081ca",
+    "button_cart_border_color": "rgba(0,0,0,0)",
+    "button_cart_border_color--highlight": "rgba(0,0,0,0)",
+    "button_cart_text_color": "#fff",
+    "button_cart_text_color--highlight": "#fff",
+    "button_cart_icon": "cart",
+    "button_cart_icon_position": "left",
+    "button_cart_border_radius": 2,
+    "icon": "icon_outline",
+    "toggle_icon_style": "carets",
+    "social_media_share_style": "squared",
+    "breadcrumb_capitalization": "none",
+    "breadcrumb_separator": "arrow",
+    "breadcrumb_size": "regular",
+    "dropdown_style": "vertical",
+    "dropdown_position": "below-parent",
+    "dropdown_link_spacing": "large",
+    "use_placeholders": true,
+    "form_button_style": "button--primary",
+    "display_heading_divider": true,
+    "heading_divider_animation": "slideInRight",
+    "heading_divider_style": "short",
+    "heading_divider_width": 2,
+    "toggle_sidebar": false,
+    "table_styles_enabled": true,
+    "qty_box_style": "box",
+    "qty_border_radius": 0,
+    "tag_style": "solid",
+    "mega_menu_1": true,
+    "mega_menu_2": false,
+    "mega_menu_3": false,
+    "mega_menu_4": false,
+    "mega_menu_5": false,
+    "mega_menu_6": false,
+    "mega_menu_7": false,
+    "mega_menu_8": false,
+    "mega_menu_9": false,
+    "mega_menu_10": false,
+    "shop_bg_color": "#ffffff",
+    "border_color": "#000000",
+    "regular_color": "#000000",
+    "link_color": "#0081ca",
+    "link_hover_color": "#76c355",
+    "heading_color": "#000000",
+    "banner_heading_color": "#ffffff",
+    "divider_color": "#cfcfcf",
+    "header_background": "#ffffff",
+    "header_link_color": "#000000",
+    "header_link_hover_color": "#76c355",
+    "header_cart_badge_color": "#000000",
+    "cart_background_color": "#ffffff",
+    "show_dropdown_shadow": true,
+    "dropdown_background": "#fff",
+    "dropdown_background_opacity": 100,
+    "dropdown_link_color": "#000000",
+    "dropdown_link_hover_color": "#76c355",
+    "footer_background": "#f7f7f7",
+    "footer_border": "rgba(0,0,0,0)",
+    "footer_link_color": "#000000",
+    "footer_link_hover_color": "#569f37",
+    "footer_text_color": "#000000",
+    "sale_color": "#cf0259",
+    "was_price_color": "#9f9f9f",
+    "product_hover_text_color": "#000000",
+    "product_hover_bg_color": "#ffffff",
+    "banner_bestseller": "#fdcf00",
+    "banner_comingsoon": "#cf0259",
+    "banner_new": "#8c50a4",
+    "banner_preorder": "#506dd0",
+    "banner_sale": "#76c355",
+    "banner_staffpick": "#ff9705",
+    "qty_icon_color": "#000000",
+    "qty_icon_hover_color": "#000000",
+    "qty_background_color": "#ffffff",
+    "qty_background_hover_color": "#ffffff",
+    "regular__font": "montserrat_n4",
+    "regular_font_size": 18,
+    "logo__font": "raleway_n6",
+    "logo_font_size": 20,
+    "logo_font_style": "lowercase",
+    "nav__font": "montserrat_n5",
+    "nav_font_size": 14,
+    "nav_letter_spacing": 1,
+    "nav_font_style": "uppercase",
+    "dropdown_heading_font_size": 30,
+    "dropdown_font_size": 14,
+    "dropdown_letter_spacing": 0,
+    "dropdown_font_style": "none",
+    "button__font": "open_sans_n4",
+    "button_letter_spacing": 0,
+    "button_font_style": "none",
+    "heading__font": "montserrat_n7",
+    "heading_size": 24,
+    "heading_letter_spacing": 0,
+    "heading_font_style": "none",
+    "preheading_font": "montserrat_n4",
+    "preheading_size": 14,
+    "preheading_style": "none",
+    "subheading_font": "montserrat_n5",
+    "subheading_size": 18,
+    "subheading_style": "none",
+    "banner_heading__font": "montserrat_n9",
+    "banner_heading_size": 32,
+    "banner_heading_style": "none",
+    "banner_text__font": "montserrat_n5",
+    "banner_text_size": 20,
+    "banner_text_letter_spacing": 1,
+    "footer_heading_font_size": 18,
+    "footer_font_size": 14,
+    "search_option": "everything",
+    "search_title": "Search VisiVite",
+    "search_placeholder": "What are you looking for?",
+    "search_heading_color": "#192455",
+    "search_display_style": "popup",
+    "search_popup_bg": "#ffffff",
+    "search_menu": "",
+    "enable_autocomplete": true,
+    "search_to_display": 5,
+    "show_secondary_image": false,
+    "display_vendor": false,
+    "thumbnail_hover_enabled": false,
+    "thumbnail_text_alignment": "center",
+    "stickers_enabled": false,
+    "sticker_shape": "round",
+    "sticker_position": "left",
+    "collection_swatches": true,
+    "collection_swatches_shape": "square",
+    "enable_quickshop": false,
+    "quickshop_button_style": "button--primary",
+    "quickshop_show_vendor": false,
+    "quickshop_show_price_savings": true,
+    "quickshop_magnify_images": false,
+    "show_dynamic_checkout_button": false,
+    "quickshop_truncate_words": false,
+    "quickshop_truncate_words_limit": 20,
+    "quickshop_gallery_transition_styles": "slide",
+    "quickshop_gallery_position": "left",
+    "show_product_gallery_thumbnails": true,
+    "qs_popup_color": "#fff",
+    "enable_shopify_review_comments": true,
+    "enable_shopify_collection_badges": true,
+    "display_product_quantity": true,
+    "limit_quantity": false,
+    "display_inventory_left": false,
+    "inventory_threshold": 10,
+    "free_price_text": "Free",
+    "product_form_style": "dropdown",
+    "swatch_style": "square",
+    "notify_me_form": false,
+    "notify_me_description": "<p>Notify me when this product is available:<\/p>",
+    "size_chart": "",
+    "free_shipping_threshold": "25.00",
+    "free_shipping_text_below": "Add ${remaining} to your cart for free shipping!",
+    "free_shipping_text": "Congrats, you've earned free shipping!",
+    "empty_cart_top_promo": "Shop Our Best Selling Products",
+    "empty_cart_collection_1": "visivite-premium-areds-2-eye-vitamins",
+    "empty_cart_title_1": "Premium AREDS 2",
+    "empty_cart_image_1": "shopify:\/\/shop_images\/hero-article.jpg",
+    "empty_cart_collection_2": "visivite-areds-2-eye-vitamins-natural-pure-precise",
+    "empty_cart_title_2": "AREDS 2",
+    "empty_cart_image_2": "shopify:\/\/shop_images\/hero.jpg",
+    "empty_cart_collection_3": "visivite-lutein-eye-vitamins",
+    "empty_cart_title_3": "Lutein Supplements",
+    "empty_cart_image_3": "shopify:\/\/shop_images\/formulation.jpg",
+    "empty_cart_default_promo": "",
+    "upsell_banner_text": "Save If You Add These Now",
+    "cart_action": "redirect_cart",
+    "cart_icon": "cart",
+    "display_special_instructions": false,
+    "display_tos_checkbox": false,
+    "tos_page": "",
+    "display_savings": true,
+    "display_ajax_quantity_box": true,
+    "cart_message": "",
+    "go_to_checkout": true,
+    "enable_shipping_calculator": false,
+    "shipping_calculator_default_country": "United States",
+    "show_multiple_currencies": false,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+    "default_currency": "USD",
+    "disqus_enabled": false,
+    "disqus_shortname": "",
+    "twitter_link": "https:\/\/twitter.com\/drpaulkrawitz",
+    "facebook_link": "https:\/\/www.facebook.com\/doctorkrawitz\/",
+    "youtube_link": "",
+    "vimeo_link": "",
+    "pinterest_link": "",
+    "tumblr_link": "",
+    "instagram_link": "",
+    "snapchat_link": "",
+    "houzz_link": "",
+    "linkedin_link": "https:\/\/www.linkedin.com\/in\/paulkrawitz\/",
+    "dribbble_link": "",
+    "behance_link": "",
+    "flickr_link": "",
+    "email_link": "",
+    "favicon": "shopify:\/\/shop_images\/Eye_Square_100px.jpg",
+    "recurring-orders-loading": "Loading subscription info...",
+    "recurring-orders-inherit-classes": false,
+    "recurring-orders-additional-button-classes": "",
+    "plus_free_shipping_popup_enable": true,
+    "plus_free_shipping_message_type": "slidedown",
+    "plus_free_shipping_hide_buttons": true,
+    "plus_free_shipping_threshold": 3,
+    "plus_color_free_shipping_background": "#fff",
+    "plus_color_free_shipping_text": "#000",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/VISIVITE-HiResLogo-RGB.jpg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f7f7f7",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#569f37",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "plus_free_shipping_threshold_override": "89.85",
+    "tab_style": "regular",
+    "show_labels": false,
+    "quikckshop_show_price_savings": true,
+    "logo_width": 200,
+    "btn1_font_size": 21,
+    "btn1_border_radius": 0,
+    "btn1_block": false,
+    "btn1_bg_color": "#ffffff",
+    "btn1_border_color": "#000000",
+    "btn1_text_color": "#000000",
+    "btn1_bg_color--highlight": "#000000",
+    "btn1_border_color--highlight": "#000000",
+    "btn1_text_color--highlight": "#ffffff",
+    "btn2_font_size": 20,
+    "btn2_border_radius": 0,
+    "btn2_block": false,
+    "btn2_bg_color": "rgba(0,0,0,0)",
+    "btn2_border_color": "#76c355",
+    "btn2_text_color": "#76c355",
+    "btn2_bg_color--highlight": "#76c355",
+    "btn2_border_color--highlight": "rgba(0,0,0,0)",
+    "btn2_text_color--highlight": "#ffffff",
+    "btn3_font_size": 12,
+    "btn3_border_radius": 2,
+    "btn3_bg_color": "#000",
+    "btn3_bg_color_transparency": 100,
+    "btn3_bg_color--highlight": "#fff",
+    "btn3_bg_color_transparency--highlight": 100,
+    "btn3_border_color": "#000",
+    "btn3_border_color--highlight": "#000",
+    "btn3_text_color": "#fff",
+    "btn3_text_color--highlight": "#000",
+    "btn3_icon": "right-arrow",
+    "btn3_icon_position": "right",
+    "btn3_animation": "checkmark",
+    "sections": {
+      "1557099047693": {
+        "type": "index__image-with-text-overlay",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Banner_3.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/hero-mobile_067c4c50-68af-4f13-bd32-b77e4c5e3a2b.jpg",
+          "link": "",
+          "pretext": "<p>NATURALLY-SOURCED EYE VITAMINS SINCE 2001<\/p>",
+          "title": "Nourish Your Eyes",
+          "subtitle": "<p>Discover the clean, pure ocular nutrition in VisiVite&reg; eye vitamins. Free of artificial colors, synthetic fillers, GMO&rsquo;s, sugar, gluten&nbsp;and soy.&nbsp;<\/p>",
+          "pretext_color": "#ffffff",
+          "heading_color": "#ffffff",
+          "subheading_color": "#ffffff",
+          "text_alignment": "left",
+          "text_horizontal_position": "left",
+          "text_vertical_position": "top",
+          "background_color": "rgba(0,0,0,0)",
+          "background_opacity": 0,
+          "border_color": "#ffffff",
+          "border_width": 0,
+          "text_width": 40,
+          "button_1": "Shop Now",
+          "button_1_link": "#shop1",
+          "button_1_style": "button--primary",
+          "button_2": "",
+          "button_2_link": "",
+          "button_2_style": "button--secondary",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "pretext_color_mobile": "#000000",
+          "heading_color_mobile": "#000000",
+          "subheading_color_mobile": "#000000",
+          "width": "wide",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ".caption-content h2 {\nfont-size: 42px;\n}\n.button.button--primary {\n  padding: 15px 25px;\nfont-weight: bold;\n}"
+        }
+      },
+      "1557099168881": {
+        "type": "index__rich-text",
+        "settings": {
+          "title": "The VisiVite Advantage",
+          "heading_font": "montserrat_n7",
+          "heading_color": "rgba(0,0,0,0)",
+          "heading_alignment": "left",
+          "heading_size": 42,
+          "text": "<p>VisiVite Eye Vitamin Formulas are based on&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\"><strong>proven research<\/strong><\/a>&nbsp;in the most respected medical publications, including the National Eye Institute's Age-Related Eye Disease Study (AREDS), Age-Related Eye Disease Study 2 (AREDS2), the Lutein Antioxidant Supplement Trial (LAST) and others.&nbsp;For more information,&nbsp;visit&nbsp;<a href=\"https:\/\/www.visivite.com\/pages\/scientific-references\">https:\/\/www.visivite.com\/pages\/scientific-references<\/a><\/p>",
+          "text_font": "montserrat_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "left",
+          "text_size": 20,
+          "columns": 1,
+          "button_label": "",
+          "button_link": "",
+          "button_alignment": "center",
+          "button_style": "button--1",
+          "background": "#ffffff",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 180,
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "fadeInDown",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "icon_label": "",
+          "text": "<p><strong>Choose Subscribe &amp; Save for Best Savings&nbsp;-&nbsp;Buy 3, Ships Free<\/strong><\/p>",
+          "alignment": "center",
+          "size": "regular",
+          "button_label": "",
+          "link": "",
+          "button_style": "button--1",
+          "background": "#192455",
+          "text_color": "#f9e051",
+          "width": "wide",
+          "homepage_only": false,
+          "enable_sticky": false,
+          "show_close_icon": true,
+          "css_class": "announcement-link",
+          "custom_css": ".announcement-link a {\ncolor: #94D976;\nborder-bottom: 1px solid #94D976;\n}\n.announcement-bar__text p {\nfont-size: 14px;\n}"
+        }
+      },
+      "header__top-bar": {
+        "type": "header__top-bar",
+        "blocks": {
+          "header__top-bar-0": {
+            "type": "text",
+            "settings": {
+              "text": "Call Us Toll Free (877) 880-5251"
+            }
+          },
+          "1574182030857": {
+            "type": "text",
+            "settings": {
+              "text": "Shipping Wordwide"
+            }
+          }
+        },
+        "block_order": [
+          "header__top-bar-0",
+          "1574182030857"
+        ],
+        "settings": {
+          "show_top_bar": false,
+          "font": "open_sans_n4",
+          "font_style": "none",
+          "font_size": 14,
+          "letter_spacing": 0,
+          "background": "rgba(0,0,0,0)",
+          "link_color": "rgba(0,0,0,0)",
+          "link_hover_color": "rgba(0,0,0,0)",
+          "text_color": "rgba(0,0,0,0)",
+          "width": "wide",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-classic": {
+        "type": "header-classic",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/VISIVITE-HiResLogo-RGB.jpg",
+          "logo_width": 225,
+          "main_linklist": "shop",
+          "menu_alignment": "start",
+          "display_search": true,
+          "icon_style": "icons_text",
+          "enable_overlay": false,
+          "show_text_shadow": false,
+          "overlay_link_color": "rgba(0,0,0,0)",
+          "overlay_link_hover_color": "rgba(0,0,0,0)",
+          "overlay_background": "rgba(0,0,0,0)",
+          "overlay_background_opacity": 0,
+          "overlay_logo": "",
+          "overlay_logo_width": 80,
+          "enable_sticky": false,
+          "sticky_background_opacity": 100,
+          "scroll_logo_width": 225,
+          "width": "wide",
+          "vertical_alignment": "center",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-1": {
+        "type": "mega-menu-1",
+        "blocks": {
+          "1574198182267": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "macular-degeneration",
+              "menu_1_link": ""
+            }
+          },
+          "1574239854880": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "healthy-eyes",
+              "menu_1_link": ""
+            }
+          },
+          "1574240494260": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "dry-eyes",
+              "menu_1_link": ""
+            }
+          },
+          "1574240508552": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "brain-body",
+              "menu_1_link": ""
+            }
+          },
+          "1574240620719": {
+            "type": "empty_column",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "1574198182267",
+          "1574239854880",
+          "1574240494260",
+          "1574240508552",
+          "1574240620719"
+        ],
+        "settings": {
+          "parent_link": "Shop",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#ffffff",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": true,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Have Questions? Call Us Toll Free (877) 880-5251",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#fdcf00",
+          "bottom_banner_text": "#000000",
+          "css_class": "",
+          "custom_css": ".menu__heading {\nfont-size: 18px;\nopacity: .5;\n}"
+        }
+      },
+      "footer__icon-bar": {
+        "type": "footer__icon-bar",
+        "blocks": {
+          "footer__icon-bar-0": {
+            "type": "text",
+            "settings": {
+              "icon": "leaf-2",
+              "text": "recyclable packaging",
+              "link": ""
+            }
+          },
+          "footer__icon-bar-1": {
+            "type": "text",
+            "settings": {
+              "icon": "heart",
+              "text": "membership club",
+              "link": "#"
+            }
+          },
+          "footer__icon-bar-2": {
+            "type": "text",
+            "settings": {
+              "icon": "box",
+              "text": "delivery to your door",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer__icon-bar-0",
+          "footer__icon-bar-1",
+          "footer__icon-bar-2"
+        ],
+        "settings": {
+          "show_icon_bar": false,
+          "alignment": "center",
+          "icon_position": "column",
+          "size": "large",
+          "background": "#ffffff",
+          "link_color": "#000000",
+          "link_hover_color": "#94d976",
+          "text_color": "#000000",
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer-classic": {
+        "type": "footer-classic",
+        "blocks": {
+          "footer-classic-0": {
+            "type": "logo",
+            "settings": {
+              "logo": "",
+              "size": "small",
+              "text": "",
+              "social_icons_footer": false
+            }
+          },
+          "footer-classic-1": {
+            "type": "link_list",
+            "settings": {
+              "menu": "main-menu",
+              "social_icons_footer": false
+            }
+          },
+          "footer-classic-2": {
+            "type": "text",
+            "settings": {
+              "title": "Title",
+              "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "social_icons_footer": false
+            }
+          }
+        },
+        "block_order": [
+          "footer-classic-0",
+          "footer-classic-1",
+          "footer-classic-2"
+        ],
+        "settings": {
+          "copyright_text": "",
+          "display_designed_by": true,
+          "display_shopify": true,
+          "display_payment_methods": true,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer-promotional": {
+        "type": "footer-promotional",
+        "blocks": {
+          "footer-promotional-1": {
+            "type": "link_list",
+            "settings": {
+              "menu_1": "vision-resources",
+              "menu_2": "support",
+              "menu_3": "shop-1"
+            }
+          },
+          "1564503511731": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "Subscribe",
+              "newsletter_richtext": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          },
+          "1575560679269": {
+            "type": "social",
+            "settings": {}
+          },
+          "1589485598532": {
+            "type": "link_list",
+            "settings": {
+              "menu_1": "footer",
+              "menu_2": "",
+              "menu_3": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-promotional-1",
+          "1564503511731",
+          "1575560679269",
+          "1589485598532"
+        ],
+        "settings": {
+          "copyright_text": "<p>All Rights Reserved.<\/p>",
+          "display_designed_by": false,
+          "display_shopify": false,
+          "display_payment_methods": true,
+          "enable_promo": false,
+          "promo_background": "#e5e0e0",
+          "promo_text": "#000000",
+          "promo_position": "row",
+          "promo_image": "",
+          "richtext": "<p><strong>Get the inside scoop.<br><\/strong>Healthy recipes &amp; more featured on our Blog!<\/p>",
+          "promo_link": "shopify:\/\/blogs\/news",
+          "button_label": "",
+          "button_style": "button--1",
+          "css_class": "",
+          "custom_css": ".footer__heading {\nfont-weight: bold;\n}\n\nul.social-icons.is-flex.is-flex-wrap {\n    display: inline-flex;\n    vertical-align: middle;\n    margin: 0 10px;\n}"
+        }
+      },
+      "1559243878715": {
+        "type": "index__image-with-text",
+        "blocks": {
+          "1559243878715-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/manufacturing.jpg",
+              "image_crop": "none",
+              "image_link": ""
+            }
+          },
+          "1559243878715-2": {
+            "type": "text",
+            "settings": {
+              "title": "Manufacturing",
+              "heading_size": "large",
+              "text": "<p>We double-check raw materials at our labs with state-of-the-art testing equipment. This proves ingredient quality prior to manufacturing. Our gleaming stainless steel machines for blending and encapsulating deliver a finished product that is designed to be pure, safe and <a href=\"https:\/\/www.capsugel.com\/biopharmaceutical-products\/vcaps-plus-capsules\" title=\"https:\/\/www.capsugel.com\/biopharmaceutical-products\/vcaps-plus-capsules\">easy to absorb<\/a> -- for superior eye health&nbsp;support that you can trust. To ensure that our nutrients retain their eye-supportive properties for the long haul, we only use bottles that are resistant to light and heat.<\/p>",
+              "button_label": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "button_style": "button--secondary",
+              "background": "#f7f7f7",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1559243878715-0",
+          "1559243878715-2"
+        ],
+        "settings": {
+          "width": "wide",
+          "show_gutter": false,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "animation": "fadeInLeft",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1559243981492": {
+        "type": "index__image-with-text",
+        "blocks": {
+          "1559243981492-2": {
+            "type": "text",
+            "settings": {
+              "title": "Formulation",
+              "heading_size": "large",
+              "text": "<p>Our eye vitamins are carefully formulated by&nbsp;Dr. Paul Krawitz,&nbsp;a Clinical Professor of Ophthalmology&nbsp;who holds multiple trademarks and patents for&nbsp;innovative eye supplements.&nbsp; As the name implies, Vitamin Science's VisiVite line only uses nutrients that are backed by&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\">strong scientific evidence<\/a>. You won't find trendy, unproven, or unsafe ingredients in our products. We start each formulation by sourcing high quality&nbsp;natural eye-supportive nutrients&nbsp;from reputable suppliers. Uniquely, VisiVite rigorously tests its products&nbsp; using independent laboratories for&nbsp;purity and potency to be certain that you, the consumer, get&nbsp;exactly what is printed on the label.<\/p>",
+              "button_label": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "button_style": "button--secondary",
+              "background": "#f7f7f7",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          },
+          "1559243981492-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/formulation.jpg",
+              "image_crop": "none",
+              "image_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559243981492-2",
+          "1559243981492-1"
+        ],
+        "settings": {
+          "width": "wide",
+          "show_gutter": false,
+          "padding_top": 25,
+          "padding_bottom": 0,
+          "animation": "fadeInRight",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-2": {
+            "type": "mixed",
+            "settings": {
+              "richtext_top": "Our Story",
+              "image_top": "",
+              "image_link_top": "shopify:\/\/pages\/our-story",
+              "image_caption_top": "<p><a href=\"\/pages\/our-story\" title=\"Our Story\">Learn more about how and why we started our company.<\/a><\/p>",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559246020796": {
+            "type": "mixed",
+            "settings": {
+              "richtext_top": "Our Products",
+              "image_top": "",
+              "image_link_top": "shopify:\/\/collections",
+              "image_caption_top": "<p><a href=\"\/collections\/all\" title=\"All Products\">See what's different about our line of health food products.<\/a><\/p>",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_bottom": "",
+              "image_link_bottom": "shopify:\/\/collections",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-2",
+          "1559246020796"
+        ],
+        "settings": {
+          "parent_link": "about",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#ffffff",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": true,
+          "mega_bottom_bar_icon": "leaf-2",
+          "mega_bottom_bar_text": "New snacks on sale now for a limited time! Use code NEW for 15% off.",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#000000",
+          "bottom_banner_text": "#ffffff",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__banner": {
+        "type": "collection__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "shopify:\/\/shop_images\/woman1_1800x800.jpg",
+          "image_darken": true,
+          "subtitle": "The Choice of Doctors & Hospitals",
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ".banner__heading title {\ncolor: #fff;\n}"
+        }
+      },
+      "collection__sidebar": {
+        "type": "collection__sidebar",
+        "blocks": {
+          "collection__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "collection__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "collection__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "collection__sidebar-0",
+          "collection__sidebar-1",
+          "collection__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__main": {
+        "type": "collection__main",
+        "settings": {
+          "collection_breadcrumb": false,
+          "collection_tags": false,
+          "collection_sort": false,
+          "show_promo_banner": false,
+          "image": "",
+          "image_darken": false,
+          "promo_title": "New product release",
+          "promo_text": "<p>Introducing the&nbsp;<a href=\"\/products\/meal-in-a-bottle-double-mocha\" title=\"Meal-in-a-bottle: Double Mocha\">newest addition<\/a> to our product line.&nbsp;<\/p>",
+          "banner_height": "small",
+          "align_height": true,
+          "collection_height": 250,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ".collection__main {\nmargin-top: 50px;\n}"
+        }
+      },
+      "product__sidebar": {
+        "type": "product__sidebar",
+        "blocks": {
+          "product__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "product__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "product__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "product__sidebar-0",
+          "product__sidebar-1",
+          "product__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__main": {
+        "type": "product__main",
+        "blocks": {
+          "1574242056877": {
+            "type": "logo_list",
+            "settings": {
+              "logos_per_row": 8,
+              "logo_size": "medium",
+              "show_logo1": true,
+              "image1": "shopify:\/\/shop_images\/no-eggs.png",
+              "link1": "",
+              "class1": "no-eggs",
+              "show_logo2": true,
+              "image2": "shopify:\/\/shop_images\/no-fish.png",
+              "link2": "",
+              "class2": "no-fish",
+              "show_logo3": true,
+              "image3": "shopify:\/\/shop_images\/no-gluten.png",
+              "link3": "",
+              "class3": "no-gluten",
+              "show_logo4": true,
+              "image4": "shopify:\/\/shop_images\/no-milk.png",
+              "link4": "",
+              "class4": "no-milk",
+              "show_logo5": true,
+              "image5": "shopify:\/\/shop_images\/no-peanuts.png",
+              "link5": "",
+              "class5": "no-peanuts",
+              "show_logo6": true,
+              "image6": "shopify:\/\/shop_images\/no-shellfish.png",
+              "link6": "",
+              "class6": "no-shellfish",
+              "show_logo7": true,
+              "image7": "shopify:\/\/shop_images\/no-soy.png",
+              "link7": "",
+              "class7": "no-soy",
+              "show_logo8": true,
+              "image8": "shopify:\/\/shop_images\/n--tree-nuts.png",
+              "link8": "",
+              "class8": "no-treenuts",
+              "padding_top": 50,
+              "padding_bottom": 50,
+              "animation": "none"
+            }
+          },
+          "1575313353828": {
+            "type": "Description",
+            "settings": {}
+          },
+          "1569523922906": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hero-article.jpg",
+              "link": "shopify:\/\/blogs\/news\/areds-2-results",
+              "pretext": "<p>SCIENTIFICALLY BACKED<\/p>",
+              "title": "AREDS 2 Results",
+              "subtitle": "<p>The AREDS2 results were published May 5, 2013 by the National Eye Institute.<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 50,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Read more",
+              "button_1_link": "shopify:\/\/blogs\/news\/areds-2-results",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1577977042864": {
+            "type": "rich_text",
+            "settings": {
+              "title": "VisiVite Advantage",
+              "heading_font": "montserrat_n7",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "left",
+              "heading_size": 36,
+              "text": "<p>VisiVite Eye Vitamin Formulas are based on&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\"><strong>proven research<\/strong><\/a>&nbsp;in the most respected medical publications, including the National Eye Institute's Age-Related Eye Disease Study (AREDS) Age-Related Eye Disease Study 2 (AREDS2), the Lutein Antioxidant Supplement Trial (LAST) and others.&nbsp;<\/p>",
+              "text_font": "montserrat_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "left",
+              "text_size": 18,
+              "columns": 1,
+              "button_label": "",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1577977224140": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Quality Control",
+              "heading_font": "montserrat_n7",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "left",
+              "heading_size": 36,
+              "text": "<p>VisiVite eye vitamins source FloraGLO brand lutein, OmniXan brand zeaxanthin and Natural Vitamin E from plant oils, which are then&nbsp;assembled in a climate-controlled <a href=\"\/pages\/gmp-certification\" title=\"GMP Certification\">GMP-certified facility<\/a>.&nbsp; Independent third party laboratories analyze the finished products for potency and purity.<\/p>",
+              "text_font": "montserrat_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "left",
+              "text_size": 18,
+              "columns": 1,
+              "button_label": "",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1577977664304": {
+            "type": "page",
+            "settings": {
+              "content_page": "about-dr-krawitz",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "wide",
+              "padding_top": 40,
+              "padding_bottom": 40,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1575564057599": {
+            "type": "recommended_products",
+            "settings": {
+              "width": "standard",
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "1574242056877",
+          "1575313353828",
+          "1569523922906",
+          "1577977042864",
+          "1577977224140",
+          "1577977664304",
+          "1575564057599"
+        ],
+        "settings": {
+          "product_breadcrumb": false,
+          "gallery_arrows": true,
+          "enable_zoom": false,
+          "enable_product_lightbox": false,
+          "slideshow_speed": 0,
+          "slideshow_transition": "slide",
+          "thumbnail_position": "bottom-thumbnails",
+          "enable_thumbnail_slider": false,
+          "product_images_position": "left",
+          "show_payment_button": true,
+          "display_vendor": false,
+          "display_sku": true,
+          "enable_shopify_product_badges": false,
+          "display_savings": false,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": false,
+          "product_description_position": "bottom",
+          "width": "standard",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ".block__description {\nbackground-color: #f3f3f3;\npadding-bottom: 60px;\n}\n.thumbnail__caption  .product-thumbnail {\n    max-width: 250px;\n    margin: 0 auto;\n}\n.bold-ro__product {\nmargin-top: 25px;\n}\n.bold-ro__bold-active, .bold-ro__recurring-text {\nfont-size: 14px;\n}\n.space {\n  margin-top: 50px;\n}\n.bold-ro__product {\nborder: none;\n}\n.sku {\n    opacity: .5;\n    font-size: 14px;\n}\ntable {\nfont-size: 16px;\n}\n.description-custom {\ndisplay: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-wrap: wrap;\n    -moz-flex-wrap: wrap;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n}"
+        }
+      },
+      "list-collections__main": {
+        "type": "list-collections__main",
+        "settings": {
+          "collections_per_row": 3,
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "align_height": false,
+          "collection_height": 400,
+          "button_style": "button--secondary",
+          "overlay_background": "#939393",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#000000",
+          "collection_title_below_image": false,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__banner": {
+        "type": "blog__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/hero-article.jpg",
+          "image_darken": false,
+          "subtitle": "Read about the latest news on eye health",
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__sidebar": {
+        "type": "blog__sidebar",
+        "blocks": {
+          "blog__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "blog__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "blog__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "blog__sidebar-0",
+          "blog__sidebar-1",
+          "blog__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "sidebar_position": "left",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__main": {
+        "type": "blog__main",
+        "settings": {
+          "blog_tags": false,
+          "blog_posts_per_row": 4,
+          "blog_posts_per_page": 50,
+          "pagination_type": "basic_pagination",
+          "blog_author": false,
+          "blog_date": true,
+          "blog_read_time": false,
+          "blog_comment_count": false,
+          "blog_show_tags": false,
+          "blog_show_excerpt": true,
+          "show_border": false,
+          "button_label": "Read more",
+          "button_type": "button--secondary",
+          "width": "wide",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__banner": {
+        "type": "article__banner",
+        "settings": {
+          "show_banner": true,
+          "image_darken": true,
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "post-title-color",
+          "custom_css": ".post-title-color h1 {\ncolor: #FFF;\n}"
+        }
+      },
+      "article__sidebar": {
+        "type": "article__sidebar",
+        "blocks": {
+          "1564506943283": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#f7f7f7",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Just discovered us? Try&nbsp;one of our products today and <strong>save 10% on your&nbsp;entire order<\/strong>!<\/p>",
+              "promo_link": "shopify:\/\/collections\/all",
+              "button_label": "Shop now",
+              "button_style": "button--secondary"
+            }
+          },
+          "1562088565222": {
+            "type": "recent_posts",
+            "settings": {
+              "title": "More from the blog",
+              "blog": "news",
+              "blog_post_count": 3
+            }
+          }
+        },
+        "block_order": [
+          "1564506943283",
+          "1562088565222"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "sidebar_position": "left",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__main": {
+        "type": "article__main",
+        "settings": {
+          "show_breadcrumb": true,
+          "blog_author": true,
+          "blog_date": true,
+          "blog_read_time": false,
+          "blog_comment_count": false,
+          "show_tags": false,
+          "show_featured_image": false,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-details__main": {
+        "type": "page-details__main",
+        "blocks": {
+          "page-details__main-0": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "",
+              "link": "",
+              "pretext": "",
+              "title": "We're dedicated to health and happiness",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#94d976",
+              "border_width": 20,
+              "text_width": 50,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-details__main-2": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Our vision",
+              "heading_font": "raleway_n7",
+              "heading_color": "#ffffff",
+              "heading_alignment": "center",
+              "heading_size": 50,
+              "text": "<p>Our product line came from the personal motivation to find not only something healthy that you could eat on-the-go, but to source the&nbsp;highest quality ingredients possible to use. We carefully source and select ingredients to ensure maximum effectiveness.&nbsp;<\/p>\n<p><\/p>\n<p>The connection to what you eat, how you feel, and your level of happiness is so important to pay attention to. Not only do we believe in&nbsp;being mindful to the planet by eating a plant-based diet, but we also believe in living mindful everyday with each other and with ourselves.<\/p>",
+              "text_font": "raleway_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "left",
+              "text_size": 14,
+              "columns": 2,
+              "button_label": "",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--1",
+              "background": "#94d976",
+              "gradient": "#bbdcac",
+              "gradient_rotation": 90,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 25,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-details__main-1": {
+            "type": "featured_collection",
+            "settings": {
+              "title": "Staff picks",
+              "collection": "",
+              "products_per": 5,
+              "mobile_products_per_row": "1",
+              "products_limit": 10,
+              "align_height": true,
+              "collection_height": 150,
+              "collection_style": "grid",
+              "width": "wide",
+              "show_gutter": true,
+              "padding_top": 25,
+              "padding_bottom": 25
+            }
+          },
+          "1562701992807": {
+            "type": "featured_video",
+            "settings": {
+              "aspect_ratio": "16:9",
+              "autoplay": false,
+              "autoloop": true,
+              "iframe_video": "https:\/\/www.youtube.com\/watch?v=CJN1n3fId_A",
+              "controls": true,
+              "html5_video": "",
+              "image": "",
+              "pretext": "",
+              "title": "Explore new recipes",
+              "subtitle": "tips + tricks for the perfect smoothie",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "horizontal_text_position": "left",
+              "vertical_text_position": "center",
+              "text_align": "left",
+              "button_label": "Play video",
+              "button_style": "button--secondary",
+              "overlay_style": "text_only",
+              "video_overlay_color": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 180,
+              "background_opacity": 77,
+              "text_width": 70,
+              "width": "wide",
+              "padding_top": 20,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-details__main-3": {
+            "type": "blog",
+            "settings": {
+              "title": "Recently on the blog",
+              "blog_widget_select": "news",
+              "home_page_articles": 4,
+              "blog_show_tags": true,
+              "blog_author": true,
+              "read_time": true,
+              "blog_date": true,
+              "blog_comment_count": false,
+              "blog_show_excerpt": true,
+              "show-border": true,
+              "button_label": "Read more",
+              "button_type": "button--1",
+              "width": "wide",
+              "padding_top": 45,
+              "padding_bottom": 25
+            }
+          }
+        },
+        "block_order": [
+          "page-details__main-0",
+          "page-details__main-2",
+          "page-details__main-1",
+          "1562701992807",
+          "page-details__main-3"
+        ],
+        "settings": {
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__banner": {
+        "type": "search__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "",
+          "image_darken": false,
+          "width": "standard",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__sidebar": {
+        "type": "search__sidebar",
+        "blocks": {
+          "search__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "search__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "search__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "search__sidebar-0",
+          "search__sidebar-1",
+          "search__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__main": {
+        "type": "search__main",
+        "settings": {
+          "search_breadcrumb": false,
+          "text": "",
+          "products_per_row": 3,
+          "mobile_products_per_row": "2",
+          "pagination_limit": 50,
+          "pagination_type": "basic_pagination",
+          "align_height": true,
+          "collection_height": 150,
+          "blog_author": false,
+          "blog_date": true,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_close_icon": true,
+          "show_popup_on_mobile": true,
+          "display_border": true,
+          "border_color": "#000000",
+          "border_width": 6,
+          "newsletter_title": "You're in the right place!",
+          "newsletter_text": "<p>Welcome to the new Visivite.com!<\/p>\n<p>In addition to its good looks, it's now&nbsp;faster, easier and even more informative for you!<\/p>",
+          "newsletter_section_text_align": "center",
+          "text_color": "#000000",
+          "background_color": "#ffffff",
+          "show_signup_form": false,
+          "display_first_name": false,
+          "display_last_name": false,
+          "image": "shopify:\/\/shop_images\/hero-mobile.jpg",
+          "image_cropping": "none",
+          "image_position": "left",
+          "overlay_color": "#ffffff",
+          "overlay_background_opacity": 80,
+          "popup_delay": 6,
+          "popup_days_to_hide": "365",
+          "animation": "fadeIn",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "fixed-message": {
+        "type": "fixed-message",
+        "settings": {
+          "text": "<p>We use cookies on our website to give you the best shopping experience. By using this site, you agree to its use of cookies. <\/p>",
+          "button_label": "I Agree",
+          "button_style": "button--primary",
+          "background": "#192455",
+          "background_opacity": 100,
+          "text_color": "#ffffff",
+          "width": "wide",
+          "css_class": "",
+          "custom_css": ".fixed-message__text p {\nfont-size: 14px;\n}"
+        }
+      },
+      "404__banner": {
+        "type": "404__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/hero-article.jpg",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "404__main": {
+        "type": "404__main",
+        "settings": {
+          "not_found_text": "<p>The page you have requested cannot be found because it has moved or no longer exists.<\/p>\n<p><\/p>\n<p>Please use the search box below or you can access our home page <a href=\"\/\" title=\"\/\">here<\/a>.<\/p>",
+          "display_search_field": true,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "password__main": {
+        "type": "password__main",
+        "settings": {
+          "custom_logo": "",
+          "password-page-background": "",
+          "pagework_page_bg_stretched": true,
+          "copyright_text": "",
+          "display_designed_by": true,
+          "display_shopify": true,
+          "social_media": true,
+          "password_page_background_color": "#ffffff",
+          "password_page_text_color": "#000000",
+          "newsletter_title": "",
+          "newsletter_richtext": "",
+          "show_signup_form": false,
+          "display_first_name": false,
+          "display_last_name": false,
+          "padding_top": 80,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-sections__main": {
+        "type": "product-sections__main",
+        "blocks": {
+          "product-sections__main-2": {
+            "type": "product_gallery",
+            "settings": {
+              "gallery_arrows": true,
+              "enable_zoom": true,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 3,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": true,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-sections__main-1": {
+            "type": "product_info",
+            "settings": {
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": true,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": true,
+              "product_description_position": "top",
+              "show_payment_button": true,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-sections__main-0": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Catchy heading",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>Use this section to create some callout text on your page, or add more details about your shop, services, promotions, etc.<br>You can keep the background color solid or use a background image instead.<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 14,
+              "columns": 1,
+              "button_label": "Read more",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--1",
+              "background": "#eeeeee",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "standard",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "product-sections__main-2",
+          "product-sections__main-1",
+          "product-sections__main-0"
+        ],
+        "settings": {
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "login-form": {
+        "type": "login-form",
+        "settings": {
+          "richtext": "",
+          "image": "shopify:\/\/shop_images\/hero.jpg",
+          "image_position": "left",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 80,
+          "css_class": "",
+          "custom_css": ".login-frame .trustedsite-trustmark.loaded {\n    margin-left: 20px;\n}"
+        }
+      },
+      "cart__banner": {
+        "type": "cart__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "",
+          "image_darken": false,
+          "subtitle": "",
+          "width": "standard",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart__main": {
+        "type": "cart__main",
+        "settings": {
+          "display_product_quantity_cart": true,
+          "display_savings": true,
+          "cart_message": "",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1562162827149": {
+        "type": "index__featured-collection",
+        "settings": {
+          "title": "Premium Ocular Health Solutions",
+          "collection": "home-page-featured",
+          "products_per": 3,
+          "mobile_products_per_row": "1",
+          "products_limit": 10,
+          "align_height": false,
+          "collection_height": 200,
+          "collection_style": "slider",
+          "width": "standard",
+          "show_gutter": true,
+          "padding_top": 25,
+          "padding_bottom": 80,
+          "css_class": "",
+          "custom_css": ".gallery-cell .product-thumbnail {\n    max-width: 250px;\n    margin: 0 auto;\n}\n.sale-sticker {\ndisplay: none;\n}"
+        }
+      },
+      "1562163151831": {
+        "type": "index__featured-promotions",
+        "blocks": {
+          "1562163151831-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eye.jpg",
+              "link": "shopify:\/\/collections\/areds-areds2-eye-vitamins",
+              "overlay_background": "rgba(0,0,0,0)",
+              "overlay_background_opacity": 70,
+              "overlay_text": "rgba(0,0,0,0)",
+              "icon_label": "",
+              "title": "Macular Degeneration",
+              "text": "<p>VisiVite AREDS and AREDS 2 Formulas for Eye Health&nbsp;are based upon National Eye Institute research.&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\">[More...]<\/a><\/p>"
+            }
+          },
+          "1562163151831-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/woman.jpg",
+              "link": "shopify:\/\/collections\/visivite®-lutein-eye-vitamins",
+              "overlay_background": "rgba(0,0,0,0)",
+              "overlay_background_opacity": 90,
+              "overlay_text": "rgba(0,0,0,0)",
+              "icon_label": "",
+              "title": "Healthy Eyes",
+              "text": "<p>Lutein and Zeaxanthin are the cornerstones to healthy eyes and ocular nutrition.&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\">[More...]<\/a><\/p>"
+            }
+          },
+          "1562163151831-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hero_997e1b11-d746-421e-a2d1-e6c95c2c4ba7.jpg",
+              "link": "shopify:\/\/collections\/brain-and-body-health",
+              "overlay_background": "rgba(0,0,0,0)",
+              "overlay_background_opacity": 70,
+              "overlay_text": "rgba(0,0,0,0)",
+              "icon_label": "",
+              "title": "Brain & Body",
+              "text": "<p>Premium ingredients ensure&nbsp; targeted&nbsp;support for healthy tissue support.&nbsp;<a href=\"\/pages\/scientific-references\" title=\"Scientific References\">[More...]<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1562163151831-2",
+          "1562163151831-0",
+          "1562163151831-1"
+        ],
+        "settings": {
+          "border_radius": 0,
+          "crop_images": true,
+          "overlay_background": "#1f1e21",
+          "overlay_background_opacity": 30,
+          "overlay_text": "#ffffff",
+          "show_border": false,
+          "width": "wide",
+          "show_gutter": false,
+          "padding_top": 25,
+          "padding_bottom": 25,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1562701274900": {
+        "type": "index__icon-with-text-column",
+        "blocks": {
+          "1562701274900-1": {
+            "type": "logo_image",
+            "settings": {
+              "icon_label": "document-2",
+              "title": "Scientifically Based",
+              "text": "<p>The ingredients chosen are backed by strong research and <a href=\"\/pages\/scientific-references\" title=\"Scientific References\">scientific evidence<\/a>.<\/p>",
+              "button_label": "",
+              "link": ""
+            }
+          },
+          "1562701274900-0": {
+            "type": "logo_image",
+            "settings": {
+              "icon_label": "checkmark",
+              "title": "Precisely Calibrated",
+              "text": "<p>The ingredients are chosen for&nbsp;bioavailability,&nbsp;clean sourcing and <a href=\"\/pages\/scientific-references\" title=\"Scientific References\">nutritional support of ocular structures<\/a>.<\/p>",
+              "button_label": "",
+              "link": ""
+            }
+          },
+          "1562701274900-2": {
+            "type": "logo_image",
+            "settings": {
+              "icon_label": "eye",
+              "title": "Satisfied Consumers",
+              "text": "<p>VisiVite's thousands of users for many years&nbsp;is evidence of high customer satisfaction in its high quality, naturally-sourced ocular nutritional products.&nbsp;<\/p>",
+              "button_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1562701274900-1",
+          "1562701274900-0",
+          "1562701274900-2"
+        ],
+        "settings": {
+          "icons_per_row": 3,
+          "icon_size": "medium",
+          "align_text": "center",
+          "button_style": "button--1",
+          "icon_color": "#4a7396",
+          "text_color": "rgba(0,0,0,0)",
+          "background": "rgba(0,0,0,0)",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 0,
+          "width": "standard",
+          "show_gutter": true,
+          "padding_top": 0,
+          "padding_bottom": 50,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__recommendations": {
+        "type": "product__recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_style": "grid",
+          "product_recommendations_heading": "You may also like",
+          "products_per": 3,
+          "recommended_products_limit": 3,
+          "align_height": false,
+          "collection_height": 200
+        }
+      },
+      "page__main": {
+        "type": "page__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": "section.resources ul {\nmargin: 25px;\n}\n\nsection.resources ul li {\nlist-style: circle;\n}"
+        }
+      },
+      "page-faq__banner": {
+        "type": "page-faq__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/Banner_5.jpg",
+          "image_darken": true,
+          "subtitle": "",
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__main": {
+        "type": "page-faq__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column1": {
+        "type": "page-faq__column1",
+        "blocks": {
+          "page-faq__column1-0": {
+            "type": "heading",
+            "settings": {
+              "title": "Recommendations + Product Facts"
+            }
+          },
+          "page-faq__column1-1": {
+            "type": "content",
+            "settings": {
+              "title": "How do I find the right eye vitamin formula for me?",
+              "answer": "<p><strong>Do you have macular degeneration?<\/strong><br>If you have mild to moderate macular degeneration, we recommend one of our&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-areds-2-eye-vitamins-natural-pure-precise\">AREDS 2 formulas<\/a>. If you have moderate to advanced macular degeneration, or have wet macular degeneration, we recommend one of our&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-premium-areds-2-eye-vitamins\">Premium AREDS 2 formulas<\/a>. If you take anticoagulants, we recommend VisiVite AREDS 2 E-Free Formula.<\/p>\n<p><strong>Do you have family members with macular degeneration or other eye problems?<\/strong><br><a href=\"https:\/\/www.visivite.com\/collections\/visivite-lutein-eye-vitamins\/products\/visivite-balanced-ocularsupport\">VisiVite Balanced Ocular Support<\/a>&nbsp;is our most complete formula for people without macular degeneration.&nbsp;<\/p>\n<p><strong>Are you looking for a general supplement for eye health?<\/strong><br>Look at one of the&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-lutein-eye-vitamins\">VisiVite Lutein formulas<\/a>.&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-lutein-eye-vitamins\/products\/visivite-superlutein444\">VisiVite Lutein 444<\/a>&nbsp;has our highest lutein and zeaxanthin in one capsule, while&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-lutein-eye-vitamins\/products\/visivite-lutein-blue-light-basher\">Visivite Blue Light Basher with Lutein<\/a>&nbsp;has additional ingredients to buffer high energy blue light and&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-lutein-eye-vitamins\/products\/visivite-nightsight\">VisiVite NightSight&nbsp;<\/a>supports good night vision.<\/p>\n<p><strong>Do you suffer from dry eye symptoms?<\/strong><br>Both of&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-dry-eye-supplements\">VisiVite's dry eye supplements<\/a>&nbsp;are based on Dr. Paul Krawitz's United States patient #7,638,142: \"Therapeutic Composition For The Treatment Of Dry Eye Syndrome.\"&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-dry-eye-supplements\/products\/visivite-dryeyerelief-tg1000\">VisiVite Dry Eye Relief TG-1000<\/a>&nbsp;is the full patented formula for moderate to severe dry eye.&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-dry-eye-supplements\/products\/visivite-quench\">VisiVite Quench<\/a>&nbsp;contains some of key targeted ingredients in a smaller, twice-daily softgel.<\/p>"
+            }
+          },
+          "page-faq__column1-2": {
+            "type": "content",
+            "settings": {
+              "title": "I have a family member with macular degeneration. What do you recommend I take?",
+              "answer": "<p>For several years, doctors have incorrectly informed their patients that macular degeneration is sporadic and not genetic. But the human genome project and new research indicates that up to&nbsp;<em><a href=\"https:\/\/www.visivite.com\/macula-risk.html\">75% of macular degeneration can be explained by various genetic vulnerabilities<\/a>.<\/em> Additionally, Omega-3 fatty acids have been shown to prevent the development of macular degeneration in healthy eyes. Therefore, we now recommend that people with high risk family histories take&nbsp;<strong><em><a href=\"https:\/\/www.visivite.com\/balanced.html\">VisiVite Balanced Ocular Support<\/a><\/em><\/strong>. This supplement contains high doses of the carotenoids Lutein, Zeaxanthin and Astaxaxanthin, as well as additional premium antioxidants, and is safe for both smokers and non-smokers.<\/p>"
+            }
+          },
+          "page-faq__column1-3": {
+            "type": "content",
+            "settings": {
+              "title": "Where do you obtain your ingredients?",
+              "answer": "<p>All of our vitamin supplement ingredients are U.S. based and naturally sourced whenever possible. Independent laboratory testing for purity and potency is performed on every single manufacturing lot. The&nbsp;<em><a href=\"https:\/\/www.visivite.com\/gmpcertified.html\">VisiVite manufacturing facility is GMP Certified<\/a>&nbsp;<\/em>and meets the strictest international criteria for hygiene and security.<\/p>"
+            }
+          },
+          "page-faq__column1-5": {
+            "type": "content",
+            "settings": {
+              "title": "Are your products safe to consume while pregnant or breastfeeding?",
+              "answer": "<p>Before ingesting anything other than food while you are pregnant, we recommend that you consult with your health care professional.&nbsp;<\/p>"
+            }
+          },
+          "1577808182424": {
+            "type": "content",
+            "settings": {
+              "title": "I have difficulty swallowing. Do you sell any vitamin liquids?",
+              "answer": "<p>We are pleased to provide a delicious&nbsp;<a href=\"https:\/\/www.visivite.com\/collections\/visivite-areds-2-eye-vitamins-natural-pure-precise\/products\/visivite-areds-2-chewable-tablets\">chewable AREDS 2 formula<\/a>. All VisiVite formulas except for the dry eye formulas are supplied in capsules that can be opened and the powder emptied into food or drink.<\/p>"
+            }
+          },
+          "1577808380992": {
+            "type": "content",
+            "settings": {
+              "title": "How many pills are in each bottle?",
+              "answer": "<p><strong>Each of these formulas contain a quantity of 60 per bottle and are a one-month supply. They require a total of 2 capsules or tablets every day. If you prefer, you can take 1 two times every day:<\/strong><\/p>\n<p>VisiVite&reg; AREDS 2 PLUS+ Gold FormulaVisiVite&reg; AREDS 2 Select FormulaVisiVite&reg; AREDS 2 Chewable Tablets FormulaVisiVite&reg; AREDS 2 E-Free Blue FormulaVisiVite&reg; AREDS 2 Zinc-Free White FormulaVisiVite&reg; Balanced Ocular SupportVisiVite&reg; Lutein+ FormulaVisiVite&reg; Quench&reg; TG-1000 FormulaProVision&reg; AREDS 2 Macular Health FormulaProDHA&trade; 1000<\/p>\n<p><strong>This formula contains 120 softgels per day. It is a one-month supply. This requires 4 softgels every day. Take 2 SOFTGELS two times every day with food:<\/strong><\/p>\n<p>Dry Eye Relief&reg;<\/p>\n<p><strong>These formulas contain 30 capsules per bottle and are a one month supply. They each require 1 capsule every day:<\/strong><\/p>\n<p>Reziva&reg; trans-resveratrolVisiVite&reg; Super Lutein 444VisiVite&reg; NightSightVisiVite&reg; Blue Basher<\/p>\n<p><strong>This formula contains 100 tablets per bottle, and is a 3-month supply. It requires 1 tablet every day:<\/strong><\/p>\n<p>Co-Defense&reg; Multivitamin<\/p>"
+            }
+          },
+          "1577808700746": {
+            "type": "content",
+            "settings": {
+              "title": "How large are the pills?",
+              "answer": "<p>- VisiVite AREDS Alpha Formula, VisiVite Lutein+ Formula, VisiVite AREDS2 Select, VisiVite AREDS 2 White, VisiVite AREDS2 Plus+ Gold, VisiVite Balanced are Size 00 capsules. These are moderate-sized, elongated and round-ended. All are soft and readily swallowed.<\/p>\n<p>- RBI Vision Performance is a Size 0 capsule, which is smaller.<\/p>\n<p>- Dry Eye Relief Tear Stabilization Capsules are moderately large liquigels. Unlike the capsule formulas listed above, these cannot be opened.<\/p>\n<p>- Co-Defense is a moderately large, oval tablet.<\/p>"
+            }
+          },
+          "1577808847729": {
+            "type": "content",
+            "settings": {
+              "title": "Why do you use Zinc Oxide and Cupric Oxide?",
+              "answer": "<p>Zinc, an important ingredient in both&nbsp;<strong><a href=\"http:\/\/www.nei.nih.gov\/amd\/summary.asp\">AREDS<\/a><\/strong>&nbsp;and&nbsp;<strong><a href=\"http:\/\/jama.jamanetwork.com\/article.aspx?articleid=1684847\">AREDS2<\/a><\/strong>, was supplied as the salt, Zinc oxide. And copper, supplied in those studies as cupric oxide, is necessary to prevent a zinc-induced anemia. But are other forms of Zinc (zinc gluconate, zinc picolinate, zinc acetate, zinc sulfate, zinc oratate) better?<\/p>\n<p><\/p>\n<p>Although heavily marketed as having higher absorption or better effects on the body, the National Institutes of Health Office of Dietary Supplmements states that exotic-sounding and heavily marketed alternative forms of Zinc and Copper have no better absorption or bioavailability than any other.<\/p>\n<p><\/p>\n<p><em><a href=\"http:\/\/ods.od.nih.gov\/factsheets\/Zinc-HealthProfessional\/\">http:\/\/ods.od.nih.gov\/factsheets\/Zinc-HealthProfessional\/<\/a><\/em><\/p>\n<p><\/p>\n<p><em><a href=\"http:\/\/ods.od.nih.gov\/News\/Copper.aspx\">http:\/\/ods.od.nih.gov\/News\/Copper.aspx<\/a><\/em><\/p>\n<p><\/p>\n<p>Because zinc oxide and cupric oxide were the forms used by the National Institutes of Health AREDS and AREDS2 research, VisiVite uses these forms exclusively in its eye supplements.<\/p>"
+            }
+          },
+          "1577809266828": {
+            "type": "content",
+            "settings": {
+              "title": "Do you have any eye vitamins on sale?",
+              "answer": "<p>We periodically provide special pricing on selected products to current customers and subscribers of our newsletter. If you are not yet a customer, we encourage you to sign up for our free E-Book and newsletter.<\/p>\n<p><\/p>\n<p>The following pages provide a free three-month of Co-Defense with the purchase of three bottles of VisiVite:<\/p>\n<p><em><strong><a href=\"https:\/\/www.visivite.com\/gold-3-pack.html\">VisiVite AREDS 2 PLUS+ Gold Formula, 3-bottles<\/a><\/strong><\/em>&nbsp;- for non-smokers<\/p>\n<p><\/p>\n<p>One in every four VisiVite customers gets free shipping, free Co-Defense multivitamins and the peace of mind one gets from automated delivery. To find out more, visit the&nbsp;<strong><a href=\"https:\/\/www.visivite.com\/subscription-orders.html\">Sight For Life Subscription Information Page<\/a>.<\/strong><\/p>\n<p><\/p>\n<p>Current discount offers are posted on the official&nbsp;<strong><a href=\"https:\/\/www.visivite.com\/cheap-discount-deal.html\">VisiVite Discount Page<\/a>.<\/strong><\/p>"
+            }
+          },
+          "1577809363268": {
+            "type": "content",
+            "settings": {
+              "title": "Why don't you sell your vitamins in stores?",
+              "answer": "<p>Mass-marketed vitamins that are sold in pharmacies, grocery stores and discount chains are confusing to shoppers and often contain lesser quality ingredients in quantities that are not effective against eye diseases such as macular degeneration and dry eye syndrome. VisiVite.Com sells only direct to consumer, via participating eye care professional offices and in select nutritional specialty stores. Educating the consumer about what makes VisiVite eye vitamins unique and helping them to find a customized solution to their eye nutrition needs is critical to the success of our products.<\/p>"
+            }
+          },
+          "1577809417874": {
+            "type": "content",
+            "settings": {
+              "title": "I take a multivitamin every day. Isn't that good enough?",
+              "answer": "<p>Beginning with the National Eye Institutes Age Related Eye Disease Study in 2001, which was the first research showing the benefit of nutritional supplements in the treatment of macular degeneration, three points were proven:<\/p>\n<p><\/p>\n<p>1.) Only specific ingredients had benefit against eye disease.<\/p>\n<p>2.) Scientific research, rather than hundreds of opinions in the lay press, should dictate the optimal ingredients and dosages of eye vitamins.<\/p>\n<p>3.) Extremely high levels of these ingredients were necessary to have an effect against eye disease.<\/p>\n<p><\/p>\n<p>Inexpensive mass-marketed multivitamins contain many ingredients but have no proven benefit against the progression of macular degeneration or the treatment of dry eye syndrome.<\/p>"
+            }
+          },
+          "page-faq__column1-4": {
+            "type": "heading",
+            "settings": {
+              "title": "Payments\/Shipping"
+            }
+          },
+          "1577809488963": {
+            "type": "content",
+            "settings": {
+              "title": "How long will it take to get my vitamins?",
+              "answer": "<p>You can avoid order delays by making sure to provide us with your correct billing and shipping address. The most common reasons for order delays are failing to enter the billing address on file with your credit card company.<\/p>\n<p><\/p>\n<p>- Within the United States: Orders are shipped the following business day. United States Priority Mail takes between 2-5 days, excluding Sundays. UPS Ground takes 2-10 business days, depending upon distance from Long Island, New York.<\/p>\n<p><\/p>\n<p>- Outside the United States: Orders are shipped the following business day via Global Shopex and takes 7-14 days. Additional delays can occur in your country's customs office.<\/p>"
+            }
+          },
+          "page-faq__column1-6": {
+            "type": "content",
+            "settings": {
+              "title": "What are your shipping fees?",
+              "answer": "<p>Shipping within the United States is by United States Priority Mail with Delivery Confirmation and is free for orders of 4 or more bottles. UPS Ground is also available for those addresses that do not receive U.S. Mail. Shipping fees are posted on our&nbsp;<a href=\"https:\/\/www.visivite.com\/info.html\">shipping information page<\/a>.<\/p>"
+            }
+          },
+          "page-faq__column1-7": {
+            "type": "content",
+            "settings": {
+              "title": "Do you ship internationally?",
+              "answer": "<p><strong>Shipping Outside USA<\/strong><br>International orders for VisiVite cannot be placed at VisiVite.com. However, the group that runs the VisiVite eBay store now ships internationally for reasonable pricing.<\/p>\n<p><\/p>\n<p>Visit&nbsp;<a href=\"http:\/\/www.ebaystores.com\/visiviteeyevitaminsstore\">http:\/\/www.ebaystores.com\/visiviteeyevitaminsstore<\/a>.<\/p>\n<p><\/p>\n<p>International orders are not returnable for exchange, refund or credit.<\/p>"
+            }
+          },
+          "1577808854502": {
+            "type": "content",
+            "settings": {
+              "title": "What are the costs for international shipments?",
+              "answer": "<p>International orders for VisiVite cannot be placed at VisiVite.com. However, the group that runs the VisiVite eBay store now ships internationally for reasonable pricing.<\/p>\n<p><\/p>\n<p>Visit&nbsp;<a href=\"http:\/\/www.ebaystores.com\/visiviteeyevitaminsstore\">http:\/\/www.ebaystores.com\/visiviteeyevitaminsstore<\/a>.<\/p>\n<p><\/p>\n<p>International orders are not returnable for exchange, refund or credit.<\/p>"
+            }
+          },
+          "1577808857264": {
+            "type": "content",
+            "settings": {
+              "title": "What credit cards do you accept?",
+              "answer": "<p>Visa<\/p>\n<p>MasterCard<\/p>\n<p>American Express<\/p>\n<p>Discover<\/p>"
+            }
+          },
+          "1577809564880": {
+            "type": "content",
+            "settings": {
+              "title": "Is my credit card information safe?",
+              "answer": "<p>VisiVite.Com is powered by 128-bit encrypted technology.<\/p>\n<p><\/p>\n<p>Click the McAfee or Trustwave logos on the bottom right of our pages or on any of the checkout pages to view the additional rigorous certifications that we have passed.<\/p>\n<p><\/p>\n<p>You can pull up a complete security report on VisiVite.Com by&nbsp;<em><a href=\"http:\/\/www.sslshopper.com\/ssl-checker.html#hostname=https:\/\/us-dc1-order.store.yahoo.net\/visivite\/cgi-bin\/wg-order?ysco_key_event_id=&amp;ysco_key_store_id=visivite&amp;sectionId=ysco.cart\">clicking the link to this page<\/a>.<\/em><\/p>"
+            }
+          },
+          "1577809160335": {
+            "type": "content",
+            "settings": {
+              "title": "I don't want to give my credit card information online. Can I still order vitamins?",
+              "answer": "<p>Most customers order online. Online ordering is fast, safe and secure, and uses 128-bit encryption. If you order via our web site, you will note that the Billing and Shipping Information page begins with&nbsp;<strong>https:\/\/<\/strong>&nbsp;which indicates the use of a Secure Server. Additionally, VisiVite.com has been awarded a&nbsp;<em><a href=\"https:\/\/www.mcafeesecure.com\/RatingVerify?ref=www.visivite.com\">McAfee Secure Web Site Certificate<\/a><\/em>.<\/p>\n<p><\/p>\n<p>However, you may also order via the following methods:<\/p>\n<p><\/p>\n<p>- Toll-Free Telephone within the United States: 1-877-880-5251. Credit card payment required. Sorry, no C.O.D.'s.<\/p>\n<p><\/p>\n<p>-<strong><a href=\"http:\/\/cdn.visivite.com\/order-form-2016.pdf\">Download a VisiVite.Com order sheet<\/a>&nbsp;<\/strong>(required Adobe Acrobat or Acrobat Reader) and mail to PO Box 1128, Huntington, NY 11743 or Fax to 631 980 4034.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq__column1-0",
+          "page-faq__column1-1",
+          "page-faq__column1-2",
+          "page-faq__column1-3",
+          "page-faq__column1-5",
+          "1577808182424",
+          "1577808380992",
+          "1577808700746",
+          "1577808847729",
+          "1577809266828",
+          "1577809363268",
+          "1577809417874",
+          "page-faq__column1-4",
+          "1577809488963",
+          "page-faq__column1-6",
+          "page-faq__column1-7",
+          "1577808854502",
+          "1577808857264",
+          "1577809564880",
+          "1577809160335"
+        ],
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column2": {
+        "type": "page-faq__column2",
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__banner": {
+        "type": "page-contact__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "",
+          "image_darken": false,
+          "subtitle": "",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__main": {
+        "type": "page-contact__main",
+        "blocks": {
+          "page-contact__main-0": {
+            "type": "textfield",
+            "settings": {
+              "label": "Name",
+              "required": true
+            }
+          },
+          "page-contact__main-1": {
+            "type": "email",
+            "settings": {
+              "label": "Email"
+            }
+          },
+          "1578409325250": {
+            "type": "textfield",
+            "settings": {
+              "label": "Subject",
+              "required": true
+            }
+          },
+          "page-contact__main-2": {
+            "type": "textarea",
+            "settings": {
+              "label": "Message",
+              "required": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact__main-0",
+          "page-contact__main-1",
+          "1578409325250",
+          "page-contact__main-2"
+        ],
+        "settings": {
+          "content_image": "",
+          "title": "Have any questions?",
+          "content_text": "<p>Orders may be placed 24 hours a day via our web site or telephone operators.<\/p>\n<p><\/p>\n<p>Vitamin Science Inc.<br>P.O. Box 1128<br>Huntington NY 11743<\/p>\n<p><\/p>\n<p><\/p>\n<p><strong>Customer Service Toll-Free within USA:<\/strong><\/p>\n<p>1-800-427-7660<\/p>\n<p><strong>Operators Toll-Free within USA:<\/strong><br>1-877-880-5251<\/p>\n<p><strong>Operators for International Callers:<\/strong><br>01-402-694-0828<\/p>\n<p><strong>Email:&nbsp;<\/strong>help @ visivite.com<\/p>",
+          "social_enable": true,
+          "text_alignment": "left",
+          "background": "#fdcf00",
+          "text_color": "#000000",
+          "form_position": "right",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__sections": {
+        "type": "page-contact__sections",
+        "settings": {}
+      },
+      "1574888547448": {
+        "type": "index__image-with-text",
+        "blocks": {
+          "1574888547448-2": {
+            "type": "text",
+            "settings": {
+              "title": "Verification",
+              "heading_size": "large",
+              "text": "<p>Our manufacturing laboratory is certified by the Natural Product Association's GMP Program. <a href=\"https:\/\/www.visivite.com\/pages\/visionary-eye-nutrition\" title=\"https:\/\/www.visivite.com\/pages\/visionary-eye-nutrition\">All of our facilities for manufacturing and distribution meet the standards<\/a> set by the US Food and Drug Administration (FDA). We regularly audit our manufacturing facilities with third-party FDA-registered agencies to ensure that our high quality standards are upheld.<\/p>",
+              "button_label": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "button_style": "button--secondary",
+              "background": "#f7f7f7",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          },
+          "1574888547448-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/dr.jpg",
+              "image_crop": "none",
+              "image_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1574888547448-2",
+          "1574888547448-1"
+        ],
+        "settings": {
+          "width": "wide",
+          "show_gutter": false,
+          "padding_top": 0,
+          "padding_bottom": 25,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-search-focus": {
+        "type": "header-search-focus",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/VISIVITE-HiResLogo-RGB.jpg",
+          "logo_width": 225,
+          "search_background": "#363636",
+          "search_icon": "#ffffff",
+          "icon_style": "icons",
+          "main_linklist": "shop",
+          "menu_alignment": "start",
+          "enable_sticky": true,
+          "sticky_background_opacity": 100,
+          "scroll_logo_width": 200,
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1575993102238": {
+        "type": "index__rich-text",
+        "settings": {
+          "title": "Why Vitamin Science?",
+          "heading_font": "montserrat_n7",
+          "heading_color": "rgba(0,0,0,0)",
+          "heading_alignment": "center",
+          "heading_size": 42,
+          "text": "<p>A drugstore store clerk can't advise you on AMD or dry eye syndrome. A \"Big Box\" discount store doesn't know the difference between natural and synthetic vitamin E. And ordinary vitamin manufacturers, juggling thousands of different products, simply can't match Vitamin Science's specialization in eye vitamins.<\/p>",
+          "text_font": "montserrat_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "center",
+          "text_size": 18,
+          "columns": 1,
+          "button_label": "",
+          "button_link": "",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "rgba(0,0,0,0)",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 180,
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1577398033581": {
+        "type": "index__html",
+        "settings": {
+          "html_content": "<div id=\"stamped-reviews-widget\" data-widget-type=\"carousel\" data-auto-play=\"true\" data-style-color-title=\"#000000\" data-style-color-text=\"#444444\" data-style-color-link=\"#000000\" data-limit-words=\"100\" data-min-rating=\"4\" data-fill-empty=\"true\" data-random=\"true\"><\/div>",
+          "width": "wide",
+          "padding_top": 40,
+          "padding_bottom": 20,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page__banner": {
+        "type": "page__banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/books2.jpg",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "small",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-library": {
+        "type": "page-library",
+        "blocks": {
+          "page-library-0": {
+            "type": "article",
+            "settings": {
+              "title": "Vision and Eye Exams",
+              "description": "<p>Vision of 20\/20 means that a person can see at 20 feet what&nbsp;a normal-sighted person can&nbsp;see at 20 feet. When&nbsp;vision worsens, the number on the bottom increases, such as 20\/50 or 20\/400. Conditions that reduce vision are many, and include:<\/p>",
+              "list": "<ul>\n\t<li><em>Corneal diseases, including scarring, injury and deformities<\/em><\/li>\n\t<li><em>Cataractous changes of the natural lens<\/em><\/li>\n\t<li><em>Glaucoma, including open angle, narrow angle and others<\/em><\/li>\n\t<li><em>Retinal disease, including macular degeneration, gliosis, retinal detachment and more<\/em><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/acuity.jpg",
+              "block_link": "shopify:\/\/blogs\/vision-eye-exams"
+            }
+          },
+          "1577741134192": {
+            "type": "article",
+            "settings": {
+              "title": "Cornea",
+              "description": "<p>In creating the eye, Nature has done something brilliant. Not made of glass, plastic or acrylic, the cornea is able to be perfectly clear because of layering of&nbsp;a precise collagen fiber pattern. Conditions that&nbsp;can negatively impact the clarity of the cornea include:<\/p>",
+              "list": "<ul>\n\t<li><em>Scars and injuries<\/em><\/li>\n\t<li><em>Keratoconus and other malformations<\/em><\/li>\n\t<li><em>​Infections and ulcers<\/em><\/li>\n\t<li><i>Inherited loss of internal cells required to pump water out<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/cornea1000x380.jpg",
+              "block_link": "shopify:\/\/blogs\/cornea"
+            }
+          },
+          "1577741154465": {
+            "type": "article",
+            "settings": {
+              "title": "Dry Eye",
+              "description": "<p>The tears are a thin and complex layer of fluid that coat the surface of the cornea and conjunctiva, providing both good vision and comfort. Dry eye symptoms may be a result of too little production or too much evaporation. Causes of dry eye include:<\/p>",
+              "list": "<ul>\n\t<li><em>Reduced estrogen levels<\/em><\/li>\n\t<li><em>Autuimmune conditions such as Sjogren's, Sarcoid and Lupus<\/em><\/li>\n\t<li><i>Inflammation <\/i><\/li>\n\t<li><i>Loss of eyelid tone<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/dryeyediagnosis.jpg",
+              "block_link": "shopify:\/\/blogs\/dry-eye"
+            }
+          },
+          "1577741169118": {
+            "type": "article",
+            "settings": {
+              "title": "Lens and Cataract",
+              "description": "<p>A cataract is not a film over the eye, but rather a yellowing of the natural lens that is inside the eye. Cataracts may be mild or severe, and are a major cause of blindness in the Third World. Issues&nbsp;relating to cataract include:<\/p>",
+              "list": "<ul>\n\t<li><i>Causes: aging, diabetes, trauma, chronic steroid use.<\/i><\/li>\n\t<li><em>Surgical methods: femtosecond laser assisted versus manual ultrasound<\/em><\/li>\n\t<li><i>Intraocular lens choices: monofocal, toric, multifocal, accommodating<\/i><\/li>\n\t<li><i>Special issues, including pseudoexfoliation syndrome<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/cataract.jpg",
+              "block_link": "shopify:\/\/blogs\/lens-and-cataract"
+            }
+          },
+          "1577887606159": {
+            "type": "article",
+            "settings": {
+              "title": "Glaucoma",
+              "description": "<p>Glaucoma is not one disease, but&nbsp;instead includes many conditions that include&nbsp;damage to the optic nerve in the back of the eye, which is sometimes, but not always, associated with elevated eye pressure. Treatment varies depending on the severity and type. Issues include:<\/p>",
+              "list": "<ul>\n\t<li><i>Type of glaucoma: Open angle, closed angle, pseudoexfoliative, pigmentary, inflammatory and more<\/i><\/li>\n\t<li><em>Prescription eyedrop therapy and side effects<\/em><\/li>\n\t<li><i>Laser treatments for open angle and narrow angle glaucoma<\/i><\/li>\n\t<li><i>Surgical methods: trabeculectomy, microstents, surgical lasers, valves<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/tonometry2.jpg",
+              "block_link": "shopify:\/\/blogs\/glaucoma"
+            }
+          },
+          "1577888269715": {
+            "type": "article",
+            "settings": {
+              "title": "Retina",
+              "description": "<p>Like plastic wrap in the bottom of a bowl, the retina lines the inside of the back of the eye. The retina is the \"film\" of the eye, receiving images that then get transferred by nerves to the back of the brain to provide us vision. Many conditions can affect good retinal function, including:<\/p>",
+              "list": "<ul>\n\t<li><i>Macular Degeneration: age-related, myopic and congenital forms<\/i><\/li>\n\t<li><em>Retinal detachment<\/em><\/li>\n\t<li><i>Retinal artery and vein occlusions<\/i><\/li>\n\t<li><i>Macular gliosis and scarring<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/FA_1000x380_a78594af-0608-4433-8dab-e217c873c548.jpg",
+              "block_link": "shopify:\/\/blogs\/retina"
+            }
+          },
+          "1586470828490": {
+            "type": "article",
+            "settings": {
+              "title": "Eye Nutrition",
+              "description": "<p>At only one inch in diameter, the eye is constructed of hundreds of delicate structures. Science has now shown benefit to nutritionally supporting the eye&nbsp;for these issues:<\/p>",
+              "list": "<ul>\n\t<li><em>Age-Related Macular Degeneration<\/em><\/li>\n\t<li><i>Dry Eye Symptoms<\/i><\/li>\n\t<li><i>Low Retinal Pigment Level<\/i><\/li>\n<\/ul>",
+              "banner": "shopify:\/\/shop_images\/supplement_facts_gold.jpg",
+              "block_link": "shopify:\/\/blogs\/eye-nutrition-and-eye-vitamins"
+            }
+          }
+        },
+        "block_order": [
+          "page-library-0",
+          "1577741134192",
+          "1577741154465",
+          "1577741169118",
+          "1577887606159",
+          "1577888269715",
+          "1586470828490"
+        ],
+        "settings": {}
+      },
+      "1580917773060": {
+        "type": "index__collection-list",
+        "blocks": {
+          "1580917773060-0": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "visivite-premium-areds-2-eye-vitamins",
+              "image": "shopify:\/\/shop_images\/AREDS2PLUS_Gold_Eye_400x_87ac40fe-c6bc-4e0e-9250-f95b3ccd6bbe.jpg",
+              "title": "Premium AREDS 2",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917773060-1": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "visivite-areds-2-eye-vitamins-natural-pure-precise",
+              "image": "shopify:\/\/shop_images\/AREDS_2_Select_1_400x_29d743df-45c6-4ca5-8882-0d86b13c697d.png",
+              "title": "AREDS 2",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917773060-2": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "areds-eyevitamins",
+              "image": "shopify:\/\/shop_images\/AREDS_Lutein_Plus_1_400x_3e0e1bdd-e94a-4336-8727-d5231ac3a84a.png",
+              "title": "AREDS 1",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917842867": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "visivite-lutein-eye-vitamins",
+              "image": "shopify:\/\/shop_images\/Balanced_Ocular_Support_1_400x_32836e76-75f3-4173-a7c0-5e307ee07700.png",
+              "title": "Lutein Supplements",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917858397": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "visivite-dry-eye-supplements",
+              "image": "shopify:\/\/shop_images\/Dry_Eye_Relief_1_400x_e6ff25aa-78d8-4438-b93d-07a53eb7d71f.png",
+              "title": "Dry Eye Remedies",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917860155": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "brain-and-body-health",
+              "image": "shopify:\/\/shop_images\/Reziva_1_400x_8f29e854-bb77-4861-aa5b-b1cce85601de.png",
+              "title": "Brain & Body Health",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917889625": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "omega-3s",
+              "image": "shopify:\/\/shop_images\/Nordic_Naturals_400x_e41f9200-ff1d-4430-8cea-4e5f875c0b8a.jpg",
+              "title": "Omega 3s",
+              "button_label": "Shop Now"
+            }
+          },
+          "1580917891323": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "all-products",
+              "image": "shopify:\/\/shop_images\/Quench_TG-1000_1_400x_8ee79e9e-fb1a-4b46-a9d0-d6a1b5d79940.png",
+              "title": "All Products",
+              "button_label": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "1580917773060-0",
+          "1580917773060-1",
+          "1580917773060-2",
+          "1580917842867",
+          "1580917858397",
+          "1580917860155",
+          "1580917889625",
+          "1580917891323"
+        ],
+        "settings": {
+          "collections_per_row": 4,
+          "align_height": false,
+          "collection_height": 250,
+          "button_style": "button--secondary",
+          "overlay_background": "#939393",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#ffffff",
+          "collection_title_below_image": true,
+          "width": "standard",
+          "show_gutter": true,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ".button {\n\tdisplay: none;\n}"
+        }
+      }
+    },
+    "content_for_index": [
+      "1557099047693",
+      "1557099168881",
+      "1580917773060",
+      "1577398033581",
+      "1562163151831",
+      "1559243981492",
+      "1559243878715",
+      "1574888547448",
+      "1575993102238",
+      "1562701274900",
+      "1562162827149"
+    ]
+  }
+}

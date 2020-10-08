@@ -1,0 +1,46 @@
+{% assign text_alpha = block_promo_text[forloop.index0] | color_extract: 'alpha' %}
+
+{% comment %} Block specific CSS {% endcomment %}
+{% capture block_css -%}
+
+    .sidebar__promo-container {
+      background-color: {{ block_promo_background[forloop.index0] }};
+      color: {% if text_alpha != 0 %}{{ block_promo_text[forloop.index0] }}{% else %} color: {{ settings.regular_color }}{% endif %};
+    }
+    
+{%- endcapture -%}
+{% style %}
+  {% include 'atb-css-loop' , css: block_css, id: id  %}
+{% endstyle %}
+
+<aside class="is-align-center sidebar__promo-container card-content">
+  <div class="sidebar__promo-image">
+    {% if block_promo_link[forloop.index0] %}
+      <a href="{{ block_promo_link[forloop.index0] }}">
+    {% endif %}
+      {% if block_promo_image[forloop.index0] %}
+        {% include 'atb-image-element' , image: block_promo_image[forloop.index0], alt: block_logo[forloop.index0].alt  %}
+      {% else %}
+        {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    {% if block_promo_link[forloop.index0] %}
+      </a>
+    {% endif %}
+  </div>
+  <div class="sidebar__promo-content container text-align-left has-no-side-gutter">
+    <div class="one-whole column">
+      {% if block_richtext[forloop.index0] != blank %}
+        <div class="has-padding-top">
+          {{ block_richtext[forloop.index0] }}
+        </div>
+      {% endif %}
+
+      {% if block_button_label[forloop.index0] != blank %}
+        <div class="has-padding-top">
+          {% include 'atb-button' , label: block_button_label[forloop.index0], href: block_promo_link[forloop.index0], type: "link", style: block_button_style[forloop.index0]  %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</aside>

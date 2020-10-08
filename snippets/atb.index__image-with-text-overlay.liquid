@@ -1,0 +1,566 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Image with text overlay",
+  "class": "image-with-text-overlay overlaid-header-option",
+  "id": "index__image-with-text-overlay",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Image",
+      "info": ""
+    },
+    {
+      "type": "image_picker",
+      "id": "atb_image",
+      "label": "Image",
+      "info": ""
+    },
+    {
+      "type": "image_picker",
+      "id": "atb_mobile_image",
+      "label": "Mobile image",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_link",
+      "label": "Link",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Text",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "atb_pretext",
+      "label": "Preheading",
+      "default": "<p>Preheading</p>",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_title",
+      "label": "Heading",
+      "default": "Image with Text Overlay",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "atb_subtitle",
+      "label": "Subheading",
+      "default": "<p>Additional info in the subheading</p>",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_pretext_color",
+      "label": "Preheading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_heading_color",
+      "label": "Heading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_subheading_color",
+      "label": "Subheading",
+      "default": "#000000",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_horizontal_position",
+      "label": "Horizontal position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_vertical_position",
+      "label": "Vertical position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Text background",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_background_color",
+      "label": "Background",
+      "default": "#FFFFFF",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_background_opacity",
+      "label": "Background opacity",
+      "min": 0,
+      "max": 100,
+      "default": 77,
+      "unit": "%",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_border_color",
+      "label": "Border",
+      "default": "#FFFFFF",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 20,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_text_width",
+      "label": "Text width",
+      "min": 40,
+      "max": 100,
+      "default": 40,
+      "unit": "%",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Button 1",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_button_1",
+      "label": "Button 1 label",
+      "default": "Button 1",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_button_1_link",
+      "label": "Button 1 link",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_button_1_style",
+      "label": "Button 1 style",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--link-style",
+          "label": "Link style"
+        }
+      ],
+      "default": "button--secondary",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Button 2",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_button_2",
+      "label": "Button 2 label",
+      "default": "Button 2",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_button_2_link",
+      "label": "Button 2 link",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_button_2_style",
+      "label": "Button 2 style",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--link-style",
+          "label": "Link style"
+        }
+      ],
+      "default": "button--secondary",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Mobile",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_mobile_image_crop",
+      "label": "Image cropping",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_mobile_text_below_image",
+      "label": "Show text below image",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_pretext_color_mobile",
+      "label": "Preheading",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_heading_color_mobile",
+      "label": "Heading",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_subheading_color_mobile",
+      "label": "Subheading",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "wide",
+      "options": [
+        {
+          "value": "half",
+          "label": "Half"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "default": 0,
+      "min": 0,
+      "max": 80,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_left",
+      "label": "Left spacing",
+      "min": 0,
+      "max": 80,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_right",
+      "label": "Right spacing",
+      "default": 0,
+      "min": 0,
+      "max": 80,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_animation",
+      "label": "Animation",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "slideInLeft",
+          "label": "Slide in left"
+        },
+        {
+          "value": "slideInRight",
+          "label": "Slide in right"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    }
+  ],
+  "warnings": []
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_image' -%}
+{%- assign atb_image = val -%}
+{%- include 'atb-render' field:'atb_mobile_image' -%}
+{%- assign atb_mobile_image = val -%}
+{%- include 'atb-render' field:'atb_link' -%}
+{%- assign atb_link = val -%}
+{%- include 'atb-render' field:'atb_pretext' -%}
+{%- assign atb_pretext = val -%}
+{%- include 'atb-render' field:'atb_title' -%}
+{%- assign atb_title = val -%}
+{%- include 'atb-render' field:'atb_subtitle' -%}
+{%- assign atb_subtitle = val -%}
+{%- include 'atb-render' field:'atb_pretext_color' -%}
+{%- assign atb_pretext_color = val -%}
+{%- include 'atb-render' field:'atb_heading_color' -%}
+{%- assign atb_heading_color = val -%}
+{%- include 'atb-render' field:'atb_subheading_color' -%}
+{%- assign atb_subheading_color = val -%}
+{%- include 'atb-render' field:'atb_text_alignment' -%}
+{%- assign atb_text_alignment = val -%}
+{%- include 'atb-render' field:'atb_text_horizontal_position' -%}
+{%- assign atb_text_horizontal_position = val -%}
+{%- include 'atb-render' field:'atb_text_vertical_position' -%}
+{%- assign atb_text_vertical_position = val -%}
+{%- include 'atb-render' field:'atb_background_color' -%}
+{%- assign atb_background_color = val -%}
+{%- include 'atb-render' field:'atb_background_opacity' -%}
+{%- assign atb_background_opacity = val -%}
+{%- include 'atb-render' field:'atb_border_color' -%}
+{%- assign atb_border_color = val -%}
+{%- include 'atb-render' field:'atb_border_width' -%}
+{%- assign atb_border_width = val -%}
+{%- include 'atb-render' field:'atb_text_width' -%}
+{%- assign atb_text_width = val -%}
+{%- include 'atb-render' field:'atb_button_1' -%}
+{%- assign atb_button_1 = val -%}
+{%- include 'atb-render' field:'atb_button_1_link' -%}
+{%- assign atb_button_1_link = val -%}
+{%- include 'atb-render' field:'atb_button_1_style' -%}
+{%- assign atb_button_1_style = val -%}
+{%- include 'atb-render' field:'atb_button_2' -%}
+{%- assign atb_button_2 = val -%}
+{%- include 'atb-render' field:'atb_button_2_link' -%}
+{%- assign atb_button_2_link = val -%}
+{%- include 'atb-render' field:'atb_button_2_style' -%}
+{%- assign atb_button_2_style = val -%}
+{%- include 'atb-render' field:'atb_mobile_image_crop' -%}
+{%- assign atb_mobile_image_crop = val -%}
+{%- include 'atb-render' field:'atb_mobile_text_below_image' -%}
+{%- assign atb_mobile_text_below_image = val -%}
+{%- include 'atb-render' field:'atb_pretext_color_mobile' -%}
+{%- assign atb_pretext_color_mobile = val -%}
+{%- include 'atb-render' field:'atb_heading_color_mobile' -%}
+{%- assign atb_heading_color_mobile = val -%}
+{%- include 'atb-render' field:'atb_subheading_color_mobile' -%}
+{%- assign atb_subheading_color_mobile = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'atb_padding_left' -%}
+{%- assign atb_padding_left = val -%}
+{%- include 'atb-render' field:'atb_padding_right' -%}
+{%- assign atb_padding_right = val -%}
+{%- include 'atb-render' field:'atb_animation' -%}
+{%- assign atb_animation = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- if atb_mobile_text_below_image == blank -%}
+{%- assign atb_mobile_text_below_image = false -%}
+{%- else -%}
+{%- assign atb_mobile_text_below_image = true -%}
+{%- endif -%}
+{%- assign atb_background_opacity = atb_background_opacity | plus: 0 -%}
+{%- assign atb_border_width = atb_border_width | plus: 0 -%}
+{%- assign atb_text_width = atb_text_width | plus: 0 -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign atb_padding_left = atb_padding_left | plus: 0 -%}
+{%- assign atb_padding_right = atb_padding_right | plus: 0 -%}
+{%- assign atb_image_key = atb_image| split: '/files/' | last -%}{%- assign atb_image = images[atb_image_key] -%}{%- assign atb_mobile_image_key = atb_mobile_image| split: '/files/' | last -%}{%- assign atb_mobile_image = images[atb_mobile_image_key] -%}{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section image-with-text-overlay overlaid-header-option">
+{% comment %}
+** Image with text overlay - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% include 'atb-include-image-with-text-overlay'   %}
+
+
+</section>

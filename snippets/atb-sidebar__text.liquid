@@ -1,0 +1,22 @@
+<div class="{{ text_alignment_class }}">
+  {% if block_title[forloop.index0] != blank %}
+    <h3 class="sidebar-block__heading" data-has-toggle-option>
+      {{ block_title[forloop.index0] }}
+      {% if settings.toggle_sidebar %}
+        <button data-sidebar-block__toggle-icon="closed" aria-label="toggle" class="sidebar-block__toggle-icon icon-style--{{ settings.toggle_icon_style }}">
+          {% if settings.toggle_icon_style == 'plus_and_minus' %}
+            {% include settings.icon, name: 'plus', icon_class: 'icon--active' %}
+            {% include settings.icon, name: 'minus' %}
+          {% else %}
+            {% include settings.icon, name: 'down-caret', icon_class: 'icon--active' %}
+          {% endif %}
+        </button>
+      {% endif %}
+    </h3>
+  {% endif %}
+  {% if block_text[forloop.index0] != blank %}
+    <div class="sidebar-block__content content" {% if settings.toggle_sidebar %}data-sidebar-block__content--collapsible{% endif %}>
+      {{ block_text[forloop.index0] }}
+    </div>
+  {% endif %}
+</div>

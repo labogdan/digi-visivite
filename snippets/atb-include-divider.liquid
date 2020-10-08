@@ -1,0 +1,77 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'atb-include-divider'   %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% comment %} Layout {% endcomment %}
+{% assign width = atb_width %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% assign animation = atb_animation | default: 'none' %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign divider_alpha = atb_divider_color | color_extract: 'alpha' %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+
+  .heading-divider:not(.heading-divider--vertical) {
+    border-color: {%- if divider_alpha != 0 -%}{{ atb_divider_color }}{%- endif -%};
+    border-width: {%- if atb_divider_width == 1 -%}thin{%- else -%}{{ atb_divider_width }}px{%- endif -%};
+  }
+
+  .heading-divider--vertical {
+    background: {%- if divider_alpha != 0 -%}{{ atb_divider_color }}{%- endif -%};
+    width: {{ atb_divider_width }}px;
+  }
+
+{%- endcapture -%}
+
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}
+                "
+                {% if animation != "none" %}
+                  data-scroll-class="{{ animation }}"
+                {% endif %}>
+  <div class="container
+              ">
+    <div class="one-whole column">
+      <div class="divider-section__content
+                  is-flex
+                  is-flex-column
+                  is-align-{{ atb_alignment }}">
+        {% if atb_divider_width != 0 and settings.display_heading_divider == true %}
+          <div class="heading-divider
+                      heading-divider--{{ atb_divider_style }}"
+                >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,192 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'atb-include-gallery'   %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+  {% assign loop = "1,2,3" | split: ',' %}
+{% else %}
+  {% assign object = section %}
+  {% assign loop = section.blocks %}
+{% endif %}
+
+{% if atb_crop_images == true %}
+  {%- capture image_crop -%}
+    has-image-crop image-crop--center
+  {%- endcapture -%}
+{% endif %}
+
+{% assign id = object.id %}
+{% comment %} Colors {% endcomment %}
+{% assign overlay_color = atb_overlay_color %}
+{% assign link_color = atb_link_color %}
+{% comment %}Layout{% endcomment %}
+{% assign width = atb_width %}
+{% assign show_gutter = atb_show_gutter %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% assign animation = atb_animation | default: 'none' %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{%- capture section_css -%}
+  .gallery-item__overlay {
+    background-color: {{ overlay_color | color_modify: 'alpha', 0.77 }};
+  }
+
+  .gallery-item__overlay .icon {
+    fill: {{ link_color }};
+  }
+{%- endcapture -%}
+
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section  class="section
+                {{ css_class }}
+                is-width-{{ width }}
+
+                {% if show_gutter == false %}
+                  has-no-side-gutter
+                  has-background
+                {% else %}
+                  has-gutter-enabled
+                {% endif %}
+                {% if loop.size > atb_images_per_row %}
+                  has-multirow-blocks
+                {% endif %}
+                {% if width == 'wide' and show_gutter == false %}
+                  equal-columns--outside-trim
+                {% endif %}
+                "
+          {% if animation != "none" %}
+            data-scroll-class="{{ animation }}"
+          {% endif %}>
+
+  {% if context == 'gallery-template' %}
+    <div class="container hide-when-banner-enabled">
+      {% include 'atb-heading' , title: page.title, heading_tag: 'h1', context: 'gallery-page', text_alignment: 'left'  %}
+    </div>
+  {% endif %}
+
+  <div class="
+              is-justify-center
+              gallery__wrapper
+              gallery-type--{{ atb_gallery_type }}
+              {% if atb_gallery_type != 'masonry' %}
+              container
+              {% endif %}
+              ">
+    {% if object.blocks.size > 0 or loop.length > 0 %}
+
+      {% for item in loop %}
+
+        {% if type == 'block' %}
+          {% capture index %}{{ forloop.index }}{% endcapture %}
+        {% else %}
+          {% assign block = item %}
+        {% endif %}
+
+        {% comment %}Add number to id for each loop{% endcomment %}
+        {% capture image %}image{{ index }}{% endcapture %}
+        {% capture link %}link{{ index }}{% endcapture %}
+
+
+        <div class="gallery__item
+                    {% if show_gutter %}
+                      has-gutter
+                    {% endif %}
+                    {% if atb_gallery_type != 'horizontal-masonry' %}
+                      {% include 'atb-column-width' , value: atb_images_per_row  %}
+                      medium-down--one-half
+                      small-down--one-whole
+                    {% endif %}
+                    column
+                    {% if atb_gallery_type == 'classic' %}{{ image_crop }}{% endif %}"
+          {% if type != 'block' %}{{ block.shopify_attributes }}{% endif %}>
+
+          {% if block_image[forloop.index0]] %}
+
+            <div class="gallery__item-wrap is-relative">
+
+              {% if atb_gallery_type == 'horizontal-masonry' %}
+                {% include 'atb-image-element' , image: block_image[forloop.index0]], alt: block_image[forloop.index0]].alt, back_to_basics: true  %}
+              {% elsif atb_gallery_type == 'masonry' %}
+                {% include 'atb-image-element' , image: block_image[forloop.index0]], alt: block_image[forloop.index0]].alt  %}
+              {% else %}
+                {% include 'atb-image-element' , image: block_image[forloop.index0]], alt: block_image[forloop.index0]].alt, stretch_width: atb_crop_images  %}
+              {% endif %}
+
+              {% if atb_enable_lightbox or block_link[forloop.index0]] != blank %}
+                <div class="gallery-item__overlay is-flex is-align-center is-justify-center">
+                  {% if atb_enable_lightbox %}
+                    <a href="{{ block_image[forloop.index0] |  img_url: '2000x' }}" data-fancybox="{{ object.id }}" class="gallery__link">
+                      {% include settings.icon, name: 'zoom' %}
+                    </a>
+                  {% endif %}
+                  {% if block_link[forloop.index0]] != blank %}
+                    <a href="{{ block_link[forloop.index0]] }}" class="gallery__link">
+                      {% include settings.icon, name: 'link' %}
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+            </div>
+
+          {% else %}
+            <div class="gallery__item-wrap is-relative">
+
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+
+              {% if atb_enable_lightbox or block_link[forloop.index0]] != blank %}
+                <div class="gallery-item__overlay is-flex is-align-center is-justify-center">
+                  {% if atb_enable_lightbox %}
+                    <a href="{{ block_image[forloop.index0] |  img_url: '2000x' }}" data-fancybox="{{ object.id }}" class="gallery__link">
+                      {% include settings.icon, name: 'zoom' %}
+                    </a>
+                  {% endif %}
+                  {% if block_link[forloop.index0]] != blank %}
+                    <a href="{{ block_link[forloop.index0]] }}" class="gallery__link">
+                      {% include settings.icon, name: 'link' %}
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+            </div>
+          {% endif %}
+
+        </div>
+
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
+
+{% comment %} JavaScript {% endcomment %}
+<script
+  type="application/json"
+  data-section-id="{{ object.id }}"
+  data-section-data >
+  {
+    "gallery_type": {{ atb_gallery_type | json }},
+    "show_gutter": {{ show_gutter }}
+  }
+</script>
+<script data-theme-editor-load-script src="{{ 'z__jsGallery.js' | asset_url }}"></script>

@@ -1,0 +1,535 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Featured promotions",
+  "class": "featured-promotions jsFeaturedPromos",
+  "max_blocks": 21,
+  "id": "index__featured-promotions",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 25,
+      "default": 0,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_crop_images",
+      "label": "Crop images",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Overlay",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_overlay_background",
+      "label": "Background",
+      "default": "#939393",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_overlay_background_opacity",
+      "label": "Background opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 70,
+      "unit": "%",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_overlay_text",
+      "label": "Text",
+      "default": "#FFFFFF",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_border",
+      "label": "Show border",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_gutter",
+      "label": "Show gutter",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_animation",
+      "label": "Animation",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "slideInLeft",
+          "label": "Slide in left"
+        },
+        {
+          "value": "slideInRight",
+          "label": "Slide in right"
+        },
+        {
+          "value": "zoomIn",
+          "label": "Zoom in"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "blocks",
+      "label": "Block ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": "",
+      "repeatable": "Promotion"
+    },
+    {
+      "type": "image_picker",
+      "id": "block_image",
+      "label": "Image",
+      "info": "",
+      "repeatable": "Promotion"
+    },
+    {
+      "type": "text",
+      "id": "block_link",
+      "label": "Link",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Overlay",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "block_overlay_background",
+      "label": "Background",
+      "default": "rgba(0,0,0,0)",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "block_overlay_background_opacity",
+      "label": "Background opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 70,
+      "unit": "%",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "block_overlay_text",
+      "label": "Text",
+      "default": "rgba(0,0,0,0)",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_icon_label",
+      "label": "Icon",
+      "placeholder": "Enter icon name",
+      "info": "",
+      "default": "truck",
+      "repeatable": "Promotion"
+    },
+    {
+      "type": "text",
+      "id": "block_title",
+      "label": "Heading",
+      "default": "Special deal",
+      "repeatable": "Promotion",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_text",
+      "label": "Text",
+      "default": "<p>Promotion description details.</p>",
+      "repeatable": "Promotion",
+      "info": ""
+    }
+  ],
+  "warnings": [
+    "repeating range fields may not be properly handled",
+    "repeating image fields may not be properly handled"
+  ]
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_border_radius' -%}
+{%- assign atb_border_radius = val -%}
+{%- include 'atb-render' field:'atb_crop_images' -%}
+{%- assign atb_crop_images = val -%}
+{%- include 'atb-render' field:'atb_overlay_background' -%}
+{%- assign atb_overlay_background = val -%}
+{%- include 'atb-render' field:'atb_overlay_background_opacity' -%}
+{%- assign atb_overlay_background_opacity = val -%}
+{%- include 'atb-render' field:'atb_overlay_text' -%}
+{%- assign atb_overlay_text = val -%}
+{%- include 'atb-render' field:'atb_show_border' -%}
+{%- assign atb_show_border = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_show_gutter' -%}
+{%- assign atb_show_gutter = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'atb_animation' -%}
+{%- assign atb_animation = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- include 'atb-render' field:'blocks' -%}
+{%- assign blocks = val -%}
+{%- include 'atb-render' field:'block_image' -%}
+{%- assign block_image = val -%}
+{%- include 'atb-render' field:'block_link' -%}
+{%- assign block_link = val -%}
+{%- include 'atb-render' field:'block_overlay_background' -%}
+{%- assign block_overlay_background = val -%}
+{%- include 'atb-render' field:'block_overlay_background_opacity' -%}
+{%- assign block_overlay_background_opacity = val -%}
+{%- include 'atb-render' field:'block_overlay_text' -%}
+{%- assign block_overlay_text = val -%}
+{%- include 'atb-render' field:'block_icon_label' -%}
+{%- assign block_icon_label = val -%}
+{%- include 'atb-render' field:'block_title' -%}
+{%- assign block_title = val -%}
+{%- include 'atb-render' field:'block_text' -%}
+{%- assign block_text = val -%}
+{%- if atb_crop_images == blank -%}
+{%- assign atb_crop_images = false -%}
+{%- else -%}
+{%- assign atb_crop_images = true -%}
+{%- endif -%}
+{%- if atb_show_border == blank -%}
+{%- assign atb_show_border = false -%}
+{%- else -%}
+{%- assign atb_show_border = true -%}
+{%- endif -%}
+{%- if atb_show_gutter == blank -%}
+{%- assign atb_show_gutter = false -%}
+{%- else -%}
+{%- assign atb_show_gutter = true -%}
+{%- endif -%}
+{%- assign atb_border_radius = atb_border_radius | plus: 0 -%}
+{%- assign atb_overlay_background_opacity = atb_overlay_background_opacity | plus: 0 -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section featured-promotions jsFeaturedPromos">
+{% comment %}
+** Featured promotions - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% assign id = section_id %}
+{% assign show_gutter = atb_show_gutter %}
+{% assign img_border_radius = atb_border_radius %}
+{% comment %} Layout {% endcomment %}
+{% assign width = atb_width %}
+{% assign animation = atb_animation %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign overlay_alpha = atb_overlay_background | color_extract: 'alpha' %}
+{% assign overlay_text_alpha = atb_overlay_text | color_extract: 'alpha' %}
+
+{% comment %} Opacity level {% endcomment %}
+{% if overlay_alpha != 0 %}
+  {% assign overlay_background_alpha = atb_overlay_background_opacity | divided_by: 100.00 %}
+{% endif %}
+
+{% capture section_css -%}
+  .featured-promotions__content {
+    border-radius: {{ img_border_radius }}px;
+  }
+
+  .featured-promotions__overlay {
+    border-radius: {{ img_border_radius }}px;
+    color: {% if overlay_text_alpha != 0 %}{{ atb_overlay_text }}{% else %}{{ settings.regular_color }}{% endif %};
+    border-color: {% if overlay_text_alpha != 0 %}{{ atb_overlay_text }}{% else %}{{ settings.regular_color }}{% endif %};
+  }
+
+  .featured-promotions__overlay .featured-promotions__link {
+    color: {{ atb_overlay_text }};
+  }
+
+  .has-color-override,
+  .has-color-override strong {
+    color: {% if overlay_text_alpha != 0 %}{{ atb_overlay_text }}{% else %}{{ settings.regular_color }}{% endif %};
+    border-color: {% if overlay_text_alpha != 0 %}{{ atb_overlay_text }}{% else %}{{ settings.regular_color }}{% endif %};
+  }
+
+  .featured-promotions__content:before {
+    background-color: {% if overlay_alpha != 0 %}{{ atb_overlay_background | color_modify: 'alpha', overlay_background_alpha }};{% endif %}
+  }
+
+{%- endcapture -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+<section class="section
+        {{ css_class }}
+        is-width-{{ width }}
+        {% if show_gutter == false %}
+          has-no-side-gutter
+          has-background
+        {% else %}
+          has-gutter-enabled
+        {% endif %}
+        {% if width == 'wide' %}
+          equal-columns--outside-trim
+        {% endif %}
+        "
+        {% if animation != "none" %}data-scroll-class="{{ animation }}"{% endif %}>
+  {% if blocks.size > 0 %}
+    {% if blocks.size > 3 %}
+      <div class="container">
+        <div class="featured-promotions__nav-wrapper one-whole column is-flex">
+          <div class="featured-promotions__nav featured-promotions__nav--prev">
+            {% include settings.icon, name: 'left-arrow' %}
+          </div>
+          <div class="featured-promotions__nav featured-promotions__nav--next ">
+            {% include settings.icon, name: 'right-arrow' %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="featured-promotions__wrapper {% if blocks.size <= 3 %} container {% endif %}" {% if blocks.size > 3 %} data-featured-promotions-slider {% endif %}>
+      {% for block0 in blocks %}
+{%- assign my_range0 = block_overlay_background_opacity[forloop.index0] | plus: 0 -%}
+{%- assign my_image_key0 = block_image[forloop.index0]| split: '/files/' | last -%}
+{%- assign my_image0 = images[my_image_key0] -%}
+
+        <div id="shopify-section-{{ blocks[forloop.index0] }}"
+            class="featured-promotions__block
+              featured-promotions__block--{{ forloop.length }}
+              {% if block_link[forloop.index0] %}
+                featured-promotions__block--has-link
+              {% endif %}
+              {% if atb_crop_images %}
+                has-image-crop
+              {% endif %}
+              medium-down--one-whole
+              {% if blocks.size == 1 %}
+                one-whole
+              {% elsif blocks.size == 2 %}
+                one-half
+              {% else %}
+                one-third
+              {% endif %}
+              column
+              has-color-override" data-promo-index={{ forloop.index0 }} {{ block.shopify_attributes }}>
+          {% comment %} Is the color set to transparent? {% endcomment %}
+          {% assign block_overlay_alpha = block_overlay_background[forloop.index0] | color_extract: 'alpha' %}
+          {% assign block_overlay_text_alpha = block_overlay_text[forloop.index0] | color_extract: 'alpha' %}
+
+          {% comment %} Opacity level {% endcomment %}
+          {% if block_overlay_alpha != 0 %}
+            {% assign block_overlay_background_alpha = my_range0 | divided_by: 100.00 %}
+          {% endif %}
+
+          {% comment %} Block specific CSS {% endcomment %}
+          {% capture block_css -%}
+            .has-color-override,
+            .has-color-override strong {
+              color: {%- if block_overlay_text_alpha != 0 -%}{{ block_overlay_text[forloop.index0] }}{% endif %};
+              border-color: {%- if block_overlay_text_alpha != 0 -%}{{ block_overlay_text[forloop.index0] }}{% endif %};
+            }
+
+            .featured-promotions__content:before {
+              background-color: {%- if block_overlay_alpha != 0 -%}{{ block_overlay_background[forloop.index0] | color_modify: 'alpha', block_overlay_background_alpha }}{% endif %};
+            }
+
+            .featured-promotions__overlay {
+              color: {%- if block_overlay_text_alpha != 0 -%}{{ block_overlay_text[forloop.index0] }}{% endif %};
+              border-color: {%- if block_overlay_text_alpha != 0 -%}{{ block_overlay_text[forloop.index0] }}{% endif %};
+            }
+
+            .featured-promotions__overlay .featured-promotions__link {
+              color: {%- if block_overlay_text_alpha != 0 -%}{{ block_overlay_text[forloop.index0] }}{% endif %};
+            }
+          {%- endcapture -%}
+          {% style %}
+            {% include 'atb-css-loop' , css: block_css, id: blocks[forloop.index0]  %}
+          {% endstyle %}
+          <div class="featured-promotions__content">
+            {% if my_image0 != blank %}
+              {% include 'atb-image-element' , image: my_image0, alt: block_image[forloop.index0].alt  %}
+            {% else %}
+              {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+            {% if block_link[forloop.index0] %}
+              <a href="{{ block_link[forloop.index0] }}" class="featured-promotions__link">
+            {% endif %}
+              <div class="featured-promotions__overlay {% if atb_show_border %}has-border{% endif %}">
+                {% if block_icon_label[forloop.index0] != blank %}
+                  {% include settings.icon, name: block_icon_label[forloop.index0] | downcase %}
+                {% endif %}
+                {% if block_title[forloop.index0] != blank %}
+                  <h3 class="featured-promotions__title has-color-override">{{ block_title[forloop.index0] }}</h3>
+                {% endif %}
+                {% if block_text[forloop.index0] != blank %}
+                  <div class="subtitle featured-promotions__subtitle has-color-override">
+                    {{ block_text[forloop.index0] }}
+                  </div>
+                {% endif %}
+              </div>
+            {% if block_link[forloop.index0] %}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+
+{% comment %}JavaScript{% endcomment %}
+<script data-theme-editor-load-script src="{{ 'z__jsFeaturedPromos.js' | asset_url }}"></script>
+
+
+
+</section>

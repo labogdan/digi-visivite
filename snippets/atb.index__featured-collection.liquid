@@ -1,0 +1,240 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Featured collection",
+  "class": "featured-collection-section jsFeaturedCollection",
+  "id": "index__featured-collection",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_title",
+      "label": "Heading",
+      "default": "Featured collection",
+      "info": ""
+    },
+    {
+      "type": "collection",
+      "id": "atb_collection",
+      "label": "Collection",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Product",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_products_per",
+      "label": "Products per row",
+      "min": 2,
+      "max": 7,
+      "default": 5,
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_mobile_products_per_row",
+      "label": "Products per row on mobile",
+      "info": "",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "atb_products_limit",
+      "label": "Limit products",
+      "min": 3,
+      "max": 50,
+      "default": 10,
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_align_height",
+      "label": "Align to height",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_collection_height",
+      "label": "Product image height",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "default": 200,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_collection_style",
+      "label": "Collection layout",
+      "default": "grid",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "wide",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_gutter",
+      "label": "Show gutter",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    }
+  ],
+  "warnings": []
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_title' -%}
+{%- assign atb_title = val -%}
+{%- include 'atb-render' field:'atb_collection' -%}
+{%- assign atb_collection = val -%}
+{%- include 'atb-render' field:'atb_products_per' -%}
+{%- assign atb_products_per = val -%}
+{%- include 'atb-render' field:'atb_mobile_products_per_row' -%}
+{%- assign atb_mobile_products_per_row = val -%}
+{%- include 'atb-render' field:'atb_products_limit' -%}
+{%- assign atb_products_limit = val -%}
+{%- include 'atb-render' field:'atb_align_height' -%}
+{%- assign atb_align_height = val -%}
+{%- include 'atb-render' field:'atb_collection_height' -%}
+{%- assign atb_collection_height = val -%}
+{%- include 'atb-render' field:'atb_collection_style' -%}
+{%- assign atb_collection_style = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_show_gutter' -%}
+{%- assign atb_show_gutter = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- if atb_align_height == blank -%}
+{%- assign atb_align_height = false -%}
+{%- else -%}
+{%- assign atb_align_height = true -%}
+{%- endif -%}
+{%- if atb_show_gutter == blank -%}
+{%- assign atb_show_gutter = false -%}
+{%- else -%}
+{%- assign atb_show_gutter = true -%}
+{%- endif -%}
+{%- assign atb_products_per = atb_products_per | plus: 0 -%}
+{%- assign atb_products_limit = atb_products_limit | plus: 0 -%}
+{%- assign atb_collection_height = atb_collection_height | plus: 0 -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section featured-collection-section jsFeaturedCollection">
+{% comment %}
+** Single featured collection - dynamic **
+- Draggable section
+{% endcomment %}
+
+  {% include 'atb-include-featured-collection'   %}
+
+
+</section>

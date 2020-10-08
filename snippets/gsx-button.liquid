@@ -1,0 +1,18 @@
+{% if cart.item_count > 0 %}
+   <script> $(".one-whole.column.is-flex.is-align-center.is-justify-end.cart__buttons").after('<div class="one-whole column is-flex is-align-center is-justify-end cart__buttons gsx"><div class="cart__checkout gsx" style="margin-top:10px;"></div></div>')</script>
+    
+	<script type="text/javascript">// <![CDATA[
+		GSXConfBtn = {
+		    isImage: 0,
+		    cssClass: 'button add_to_cart checkout',
+          cssStyles: 'margin-bottom: 0px;',
+		    locationButton: {
+		        selector: '.cart__checkout.gsx',
+		        action: 'append'
+		    },
+		    image: '',
+		    isTest: 1
+		}
+	// ]]></script>
+	<script type="text/javascript" src="https://shopify.globalshopex.com/cdn/script/GSX_btn_base.js"></script>
+{% endif %}

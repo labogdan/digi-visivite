@@ -1,0 +1,312 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Testimonials",
+  "class": "testimonials jsTestimonials",
+  "max_blocks": 21,
+  "id": "index__testimonial",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_border",
+      "label": "Show border",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_enable_images",
+      "label": "Show images",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_crop_shape",
+      "label": "Image crop shape",
+      "info": "",
+      "options": [
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "default": "circle"
+    },
+    {
+      "type": "select",
+      "id": "atb_card_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_card_text",
+      "label": "Quote text",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_card_background",
+      "label": "Quote background",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_animation",
+      "label": "Animation",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "slideInLeft",
+          "label": "Slide in left"
+        },
+        {
+          "value": "slideInRight",
+          "label": "Slide in right"
+        },
+        {
+          "value": "zoomIn",
+          "label": "Zoom in"
+        }
+      ],
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "blocks",
+      "label": "Block ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": "",
+      "repeatable": "Testimonial"
+    },
+    {
+      "type": "image_picker",
+      "id": "block_image",
+      "label": "Image",
+      "info": "",
+      "repeatable": "Testimonial"
+    },
+    {
+      "type": "header",
+      "content": "Quote",
+      "repeatable": "Testimonial",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_quote",
+      "label": "Text",
+      "default": "<p>Include a favorite customer quote or feedback here.</p>",
+      "repeatable": "Testimonial",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_text",
+      "label": "Text",
+      "default": "<p><strong>Customer name</strong></p><p><em>More info about them could go here.</em></p><p>customerlink.com</p>",
+      "repeatable": "Testimonial",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "block_info_text",
+      "label": "Info text",
+      "default": "rgba(0,0,0,0)",
+      "repeatable": "Testimonial",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "block_info_background",
+      "label": "Info background",
+      "default": "rgba(0,0,0,0)",
+      "repeatable": "Testimonial",
+      "info": ""
+    }
+  ],
+  "warnings": [
+    "repeating image fields may not be properly handled",
+    "some fields may be named the same"
+  ]
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_show_border' -%}
+{%- assign atb_show_border = val -%}
+{%- include 'atb-render' field:'atb_enable_images' -%}
+{%- assign atb_enable_images = val -%}
+{%- include 'atb-render' field:'atb_crop_shape' -%}
+{%- assign atb_crop_shape = val -%}
+{%- include 'atb-render' field:'atb_card_alignment' -%}
+{%- assign atb_card_alignment = val -%}
+{%- include 'atb-render' field:'atb_card_text' -%}
+{%- assign atb_card_text = val -%}
+{%- include 'atb-render' field:'atb_card_background' -%}
+{%- assign atb_card_background = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'atb_animation' -%}
+{%- assign atb_animation = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- include 'atb-render' field:'blocks' -%}
+{%- assign blocks = val -%}
+{%- include 'atb-render' field:'block_image' -%}
+{%- assign block_image = val -%}
+{%- include 'atb-render' field:'block_quote' -%}
+{%- assign block_quote = val -%}
+{%- include 'atb-render' field:'block_text' -%}
+{%- assign block_text = val -%}
+{%- include 'atb-render' field:'block_info_text' -%}
+{%- assign block_info_text = val -%}
+{%- include 'atb-render' field:'block_info_background' -%}
+{%- assign block_info_background = val -%}
+{%- if atb_show_border == blank -%}
+{%- assign atb_show_border = false -%}
+{%- else -%}
+{%- assign atb_show_border = true -%}
+{%- endif -%}
+{%- if atb_enable_images == blank -%}
+{%- assign atb_enable_images = false -%}
+{%- else -%}
+{%- assign atb_enable_images = true -%}
+{%- endif -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section testimonials jsTestimonials">
+{% comment %}
+** Testimonial 1 - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% include 'atb-include-testimonial'   %}
+
+
+</section>

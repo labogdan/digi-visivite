@@ -1,0 +1,61 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'atb-include-product-description'   %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% assign title = atb_title %}
+{% assign blog_widget_select = atb_blog_widget_select %}
+{% assign home_page_articles = atb_home_page_articles %}
+{% comment %}Layout{% endcomment %}
+{% assign width = atb_width %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' -%}
+      width: 100%;
+    {%- endif %}
+  }
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}">
+
+  
+  <div class="container">
+    <div class="description content bottom has-padding-top description-custom">
+      
+      <div class="two-thirds column medium-down--one-whole prod-desc">
+        {{ product.description | split: '<!-- split -->' | first }}
+      </div>
+      <div class="one-third column medium-down--one-whole">
+        {% unless product.metafields.global.allergens == blank %}
+        	{{product.metafields.global.allergens}}
+        {% endunless %}
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+

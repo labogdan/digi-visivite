@@ -1,0 +1,198 @@
+{% assign plus_message_type = settings.plus_free_shipping_message_type %}
+
+<style>
+  #plus-free-shipping-popup {
+    width: 600px;
+    max-width: 90%;
+    max-width: calc(95vw - 20px);
+    margin: 0px auto 0;
+    background-color: {{ settings.plus_color_free_shipping_background }};
+    color: {{ settings.plus_color_free_shipping_text }};
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    {% if plus_message_type == 'slidedown' %}
+      opacity: 0;
+      height: auto;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.3s all;
+    {% endif %}
+  }
+  #plus-free-shipping-popup.opened {
+    opacity: 1;
+    max-height: 240px;
+    margin-top: 40px;
+  }
+  .plus-free-shipping-popup__content {
+    padding: 40px 40px 40px;
+  }
+  .plus-free-shipping-popup__title {
+    margin-bottom: 36px;
+  }
+  .plus-free-shipping-popup__button-wrapper {
+    margin: 26px -10px 0 -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plus-free-shipping-popup__button-wrapper .button {
+    margin: 0 10px;
+  }
+  .plus-free-shipping-popup__checkout.button {
+    color: #fff;
+    background-color: #0081ca;
+    border-color: rgba(0,0,0,0);
+  }
+  .plus-progress-meter {
+    margin-bottom: 10px;
+  }
+  .plus-progress-meter .track {
+    border-radius: 50px;
+    position: relative;
+    height: 9px;
+    background: #cf024242;
+    overflow: hidden;
+  }
+  .plus-progress-meter .progress {
+    border-radius: 50px;
+    transition: width 0.2s;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 9px;
+    background: #cf0259; 
+  }
+</style>
+
+{% assign threshold = settings.plus_free_shipping_threshold %}
+{% assign threshold_float = settings.plus_free_shipping_threshold | times: 1.0 %}
+{% assign threshold_met = false %}
+{% assign eligible_item_count = 0 %}
+
+{% for item in cart.items %}
+  {% if item.final_line_price > 0 %}
+    {% assign eligible_item_count = eligible_item_count | plus: item.quantity %}
+  {% endif %}
+{% endfor %}
+
+{% assign eligible_items_float = eligible_item_count | times: 1.0 %}
+
+{% if eligible_item_count >= threshold %}
+  {% assign progressWidth = 100 %}
+  {% assign threshold_met = true %}
+{% else %}
+  {% assign diff = threshold | minus: eligible_item_count %}
+  {% assign progressWidth = eligible_items_float | divided_by: threshold_float | times: 100 %}  
+{% endif %}
+
+{% if eligible_item_count != 0 %}
+  {% if plus_message_type == 'popup' %}
+  <a href="#plus-free-shipping-popup" id="plus-free-shipping-popup__trigger"></a>
+  {% endif %}
+
+  <div id="plus-free-shipping-popup" class="plus-free-shipping-popup-wrapper"{% if plus_message_type == 'popup' %}style="display: none;"{% endif %}>
+    <div class="plus-free-shipping-popup__content">
+      <h3 class="plus-free-shipping-popup__title">{% if threshold_met %}{{ 'plus.free_shipping_popup.free_shipping_reached_message' | t }}{% else %}{{ 'plus.free_shipping_popup.message_html' | t: number: diff }}{% endif %}</h3>
+      <div class="plus-progress-meter">
+        <div class="track">
+          <span class="progress" style="width: {{ progressWidth }}%;">
+          </span>
+        </div>
+      </div>
+      {% unless plus_message_type == 'banner' or settings.plus_free_shipping_hide_buttons %}
+        <div class="plus-free-shipping-popup__button-wrapper">
+          <button class="plus-free-shipping-popup__checkout button">{{ 'plus.free_shipping_popup.checkout_button_text' | t }}</button>
+          <a href="#" class="plus-free-shipping-popup__close">{{ 'plus.free_shipping_popup.close_button_text' | t }}</a>
+        </div>
+      {% endunless %}
+    </div>
+  </div> 
+{% endif %}
+
+<script>
+  window.Plus = window.Plus || {};
+  Plus.freeShippingPopup = Plus.freeShippingPopup || {};
+
+    Plus.freeShippingPopup.init = function() {
+
+      var $popup = $('#plus-free-shipping-popup');
+
+      {% if plus_message_type == 'popup' %}
+        $.fancybox.open($popup, {
+          baseClass: 'free-shipping__lightbox',
+          hash: false,
+          infobar: false,
+          toolbar: false,
+          loop: false,
+          smallBtn: true,
+          modal: false,
+          mobile: {
+            preventCaptionOverlap: false,
+            toolbar: false
+          },
+          helpers: {
+            overlay: {
+              opacity: 0.5
+            }
+          }
+        });
+        $('.plus-free-shipping-popup__close').on('click', function (e) {
+          e.preventDefault();
+          $.fancybox.close();
+        });
+      {% endif %}
+
+      {% if plus_message_type == 'slidedown' %}
+        $popup.addClass('opened');
+        $('.plus-free-shipping-popup__close').on('click', function (e) {
+          e.preventDefault();
+          $popup.removeClass('opened');
+        });
+      {% endif %}
+
+      {% unless plus_message_type == 'banner' %}
+        $('.plus-free-shipping-popup__checkout').on('click', function () {
+          Plus.freeShippingPopup.triggerCheckout('input[name="checkout"]');
+        });
+      {% endunless %}
+    }
+
+  Plus.freeShippingPopup.updateCount = function (cart) {
+    var $popupTitle = $('.plus-free-shipping-popup__title');
+    var $progress = $('.plus-progress-meter .progress');
+    var freeShippingMessage = "{{ 'plus.free_shipping_popup.message_html' | t: number: '[number]' }}";
+    var freeShippingReached = "{{ 'plus.free_shipping_popup.free_shipping_reached_message' | t }}";
+    var threshold = {{ threshold }};
+    var eligibleItemsCount = 0;
+
+    cart.items.forEach(function(item) {
+      if (item.final_line_price > 0) {
+        eligibleItemsCount += item.quantity;
+      }
+    });
+
+    var progressWidth = (eligibleItemsCount / threshold) * 100;
+    
+    if (eligibleItemsCount < threshold) {
+      var diff = threshold - eligibleItemsCount;
+      var newMessage = freeShippingMessage.replace('[number]', diff);
+
+      $popupTitle.html(newMessage);
+      $progress.css('width', progressWidth + '%');
+    } else {
+      $popupTitle.text(freeShippingReached);
+      $progress.css('width', '100%');
+    }
+  }
+
+  Plus.freeShippingPopup.triggerCheckout = function (selector) {
+    $(selector).trigger('click');
+  }
+
+  $(document).ready(function() {
+    Plus.freeShippingPopup.init();
+  });
+</script>

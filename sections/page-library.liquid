@@ -1,0 +1,73 @@
+<section class="resources">
+      	<div class="grid-x grid-padding-x medium-up-2">
+          
+          
+          {%- for block in section.blocks -%}
+  		  {%- if block.type == 'article' -%}	
+          <div class="cell resource">
+            <img src="{{ block.settings.banner | img_url: '1000x' }}">
+            <h2>{{ block.settings.title | escape }}</h2>
+            <p>{{ block.settings.description }}</p>
+            {{ block.settings.list }}   
+            <a href="{{ block.settings.block_link }}" class="button button--primary">View All</a>
+          </div>
+          {%- endif -%}
+          {%- endfor -%}
+          
+	</div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Blocks",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Entry",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+  		{
+          "type": "html",
+          "id": "list",
+          "label": "List"
+        },
+        {
+          "type": "image_picker",
+          "id": "banner",
+          "label": "Banner Image"
+        },
+		{
+          "type": "url",
+          "id": "block_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "article",
+        "settings": {
+          "title": "",
+          "description": "",
+          "list": "",
+          "banner": "",
+          "block_link": ""
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

@@ -1,0 +1,535 @@
+{% comment %}
+ATB-SCHEMA{
+  "name": "Slideshow with text",
+  "class": "jsSlideshowWithText slideshow-with-text",
+  "id": "index__slideshow-with-text",
+  "banner": "",
+  "icon": "",
+  "tags": "",
+  "description": "",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Text",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_background_color",
+      "label": "Background",
+      "default": "#EEEEEE",
+      "info": ""
+    },
+    {
+      "type": "color",
+      "id": "atb_text_color",
+      "label": "Text",
+      "default": "rgba(0,0,0,0)",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_text_transition",
+      "label": "Text transition",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "fadeIn",
+          "label": "Fade in"
+        },
+        {
+          "value": "fadeInDown",
+          "label": "Fade in down"
+        },
+        {
+          "value": "fadeInLeft",
+          "label": "Fade in left"
+        },
+        {
+          "value": "fadeInRight",
+          "label": "Fade in right"
+        },
+        {
+          "value": "zoomIn",
+          "label": "Zoom in"
+        }
+      ],
+      "default": "fadeIn",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--link-style",
+          "label": "Link style"
+        }
+      ],
+      "default": "button--primary",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_nav_buttons",
+      "label": "Show navigation dots",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Images",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_image_transition",
+      "label": "Image transition",
+      "options": [
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        }
+      ],
+      "default": "slide",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_image_slideshow_speed",
+      "label": "Change image every",
+      "min": 0,
+      "max": 12,
+      "step": 1,
+      "default": 8,
+      "unit": "sec",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_arrows",
+      "label": "Show arrows",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Layout",
+      "info": ""
+    },
+    {
+      "type": "select",
+      "id": "atb_width",
+      "label": "Width",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ],
+      "default": "standard",
+      "info": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "atb_show_gutter",
+      "label": "Show gutter",
+      "default": true,
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "range",
+      "id": "atb_padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 20,
+      "unit": "px",
+      "info": ""
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": ""
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "atb_css_class",
+      "label": "CSS Class",
+      "info": ""
+    },
+    {
+      "type": "textarea",
+      "id": "atb_custom_css",
+      "label": "Custom CSS",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "blocks",
+      "label": "Block ID",
+      "info": "Enter a unique ID with only letters and numbers, no spaces",
+      "default": "",
+      "repeatable": "Slide"
+    },
+    {
+      "type": "image_picker",
+      "id": "block_image",
+      "label": "Image",
+      "info": "",
+      "repeatable": "Slide"
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_pretext",
+      "label": "Preheading",
+      "default": "<p>Preheading</p>",
+      "repeatable": "Slide",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_title",
+      "label": "Heading",
+      "default": "Your headline",
+      "repeatable": "Slide",
+      "info": ""
+    },
+    {
+      "type": "wysiwyg",
+      "id": "block_text",
+      "label": "Text",
+      "default": "<p>Each slide can have its own text and button link. Use it to describe the product, collection, page, etc. that the image depicts.</p>",
+      "repeatable": "Slide",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_button_label",
+      "label": "Button label",
+      "repeatable": "Slide",
+      "info": ""
+    },
+    {
+      "type": "text",
+      "id": "block_button_link",
+      "label": "Slide link",
+      "repeatable": "Slide",
+      "info": ""
+    }
+  ],
+  "warnings": [
+    "repeating image fields may not be properly handled"
+  ]
+}ATB-SCHEMA
+{% endcomment %}
+
+
+{%- include 'atb-render' field:'section_id' -%}
+{%- assign section_id = val -%}
+{%- include 'atb-render' field:'atb_background_color' -%}
+{%- assign atb_background_color = val -%}
+{%- include 'atb-render' field:'atb_text_color' -%}
+{%- assign atb_text_color = val -%}
+{%- include 'atb-render' field:'atb_text_alignment' -%}
+{%- assign atb_text_alignment = val -%}
+{%- include 'atb-render' field:'atb_text_transition' -%}
+{%- assign atb_text_transition = val -%}
+{%- include 'atb-render' field:'atb_button_style' -%}
+{%- assign atb_button_style = val -%}
+{%- include 'atb-render' field:'atb_show_nav_buttons' -%}
+{%- assign atb_show_nav_buttons = val -%}
+{%- include 'atb-render' field:'atb_image_position' -%}
+{%- assign atb_image_position = val -%}
+{%- include 'atb-render' field:'atb_image_transition' -%}
+{%- assign atb_image_transition = val -%}
+{%- include 'atb-render' field:'atb_image_slideshow_speed' -%}
+{%- assign atb_image_slideshow_speed = val -%}
+{%- include 'atb-render' field:'atb_show_arrows' -%}
+{%- assign atb_show_arrows = val -%}
+{%- include 'atb-render' field:'atb_width' -%}
+{%- assign atb_width = val -%}
+{%- include 'atb-render' field:'atb_show_gutter' -%}
+{%- assign atb_show_gutter = val -%}
+{%- include 'atb-render' field:'atb_padding_top' -%}
+{%- assign atb_padding_top = val -%}
+{%- include 'atb-render' field:'atb_padding_bottom' -%}
+{%- assign atb_padding_bottom = val -%}
+{%- include 'atb-render' field:'undefined' -%}
+{%- assign undefined = val -%}
+{%- include 'atb-render' field:'atb_css_class' -%}
+{%- assign atb_css_class = val -%}
+{%- include 'atb-render' field:'atb_custom_css' -%}
+{%- assign atb_custom_css = val -%}
+{%- include 'atb-render' field:'blocks' -%}
+{%- assign blocks = val -%}
+{%- include 'atb-render' field:'block_image' -%}
+{%- assign block_image = val -%}
+{%- include 'atb-render' field:'block_pretext' -%}
+{%- assign block_pretext = val -%}
+{%- include 'atb-render' field:'block_title' -%}
+{%- assign block_title = val -%}
+{%- include 'atb-render' field:'block_text' -%}
+{%- assign block_text = val -%}
+{%- include 'atb-render' field:'block_button_label' -%}
+{%- assign block_button_label = val -%}
+{%- include 'atb-render' field:'block_button_link' -%}
+{%- assign block_button_link = val -%}
+{%- if atb_show_nav_buttons == blank -%}
+{%- assign atb_show_nav_buttons = false -%}
+{%- else -%}
+{%- assign atb_show_nav_buttons = true -%}
+{%- endif -%}
+{%- if atb_show_arrows == blank -%}
+{%- assign atb_show_arrows = false -%}
+{%- else -%}
+{%- assign atb_show_arrows = true -%}
+{%- endif -%}
+{%- if atb_show_gutter == blank -%}
+{%- assign atb_show_gutter = false -%}
+{%- else -%}
+{%- assign atb_show_gutter = true -%}
+{%- endif -%}
+{%- assign atb_image_slideshow_speed = atb_image_slideshow_speed | plus: 0 -%}
+{%- assign atb_padding_top = atb_padding_top | plus: 0 -%}
+{%- assign atb_padding_bottom = atb_padding_bottom | plus: 0 -%}
+{%- assign no_image = images['no_image_comparison'] -%}
+
+<section id="shopify-section-{{section_id}}" class="shopify-section jsSlideshowWithText slideshow-with-text">
+{% comment %}
+** Slideshow with text - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% assign id = section_id %}
+{% assign show_gutter = atb_show_gutter %}
+{% assign text_alignment = atb_text_alignment %}
+{% assign text_transition = atb_text_transition %}
+{% assign show_nav_buttons = atb_show_nav_buttons %}
+{% assign image_position = atb_image_position %}
+{% comment %} Layout {% endcomment %}
+{% assign width = atb_width %}
+{% assign padding_top = atb_padding_top %}
+{% assign padding_bottom = atb_padding_bottom %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = atb_css_class %}
+{% assign custom_css = atb_custom_css %}
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign background_alpha = atb_background_color | color_extract: 'alpha' %}
+{% assign text_alpha = atb_text_color | color_extract: 'alpha' %}
+
+{% comment %} Section specific CSS {% endcomment %}
+
+{%- capture section_css -%}
+
+.text-slideshow-column {
+  background: {% if background_alpha != 0 %}{{ atb_background_color }}{% else %}{{ settings.shop_bg_color }}{% endif %};
+}
+
+.text-slideshow__content .banner__subheading p,
+.text-slideshow__content .title {
+  color: {% if text_alpha != 0 %}{{ atb_text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+}
+
+.flickity-page-dots .dot {
+  background: {% if text_alpha != 0 %}{{ atb_text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+}
+
+{%- endcapture -%}
+
+{% style %}
+  #shopify-section-{{ section_id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+
+  {% include 'atb-css-loop' , css: section_css, id: id  %}
+  {% include 'atb-css-loop' , css: custom_css, id: id  %}
+{% endstyle %}
+
+{% comment %} HTML markup  {% endcomment %}
+{% if blocks.size > 0 %}
+  <section class="section
+        {{ css_class }}
+        is-width-{{ width }}
+        {% if show_gutter == false %}
+          has-no-side-gutter
+          has-background
+        {% else %}
+          has-gutter-enabled
+        {% endif %}
+        {% if width == 'wide' %}
+          equal-columns--outside-trim
+        {% endif %}
+        ">
+  <div class="slideshow-with-text__container container">
+    <div class="image-slideshow-column
+                three-fifths
+                medium-down--one-whole
+                column
+                image-slideshow-position--{{ image_position }}">
+      <div class="image-slideshow image-slideshow--{{ atb_image_transition }}" data-image-slideshow>
+        {% for block0 in blocks %}
+{%- assign my_image_key0 = block_image[forloop.index0]| split: '/files/' | last -%}
+{%- assign my_image0 = images[my_image_key0] -%}
+          <div id="shopify-section-{{ blocks[forloop.index0] }}" class="image-slideshow__slide" data-slide-index={{ forloop.index0 }} {{ block.shopify_attributes }}>
+            {% if block_button_label[forloop.index0] == blank and block_button_link[forloop.index0] != blank %}
+              <a href="{{ block_button_link[forloop.index0] }}">
+            {% endif %}
+              {% if my_image0 != blank %}
+                {% include 'atb-image-element' , image: my_image0, alt: block_image[forloop.index0].alt  %}
+              {% else %}
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            {% if block_button_label[forloop.index0] == blank and block_button_link[forloop.index0] != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="text-slideshow-column
+                two-fifths
+                medium-down--one-whole
+                column
+                is-align-center
+                is-flex-wrap">
+      <div class="text-slideshow {% if show_dots == false %} flickity-page-dots--hidden {% endif %}" data-text-slideshow data-slide-index={{ forloop.index0 }} {{ block.shopify_attributes }}>
+        {% for block0 in blocks %}
+{%- assign my_image_key0 = block_image[forloop.index0]| split: '/files/' | last -%}
+{%- assign my_image0 = images[my_image_key0] -%}
+
+        <div id="shopify-section-{{ blocks[forloop.index0] }}" class="text-slideshow__slide
+                                                        text-slideshow__slide--{{ blocks[forloop.index0] }}"
+                                                        >
+            <div class="text-slideshow__content text-align-{{ text_alignment }}">
+              {% if block_pretext[forloop.index0] != blank %}
+                <div class="text-slideshow__heading banner__subheading">{{ block_pretext[forloop.index0] }}</div>
+              {% endif %}
+              {% if block_title[forloop.index0] != blank %}
+                <h2 class="text-slideshow__heading banner__heading title">{{ block_title[forloop.index0] }}</h2>
+              {% endif %}
+              {% if block_text[forloop.index0] != blank %}
+                <div class="text-slideshow__heading banner__subheading subtitle content">{{ block_text[forloop.index0] }}</div>
+              {% endif %}
+              {% if block_button_label[forloop.index0] != blank %}
+                {% include 'atb-button' , label: block_button_label[forloop.index0], href: block_button_link[forloop.index0], style: atb_button_style, type: "link"  %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+  <div class="container has-padding-top has-padding-bottom text-align-center">
+    <div class="one-whole column">
+      <p>{{ 'homepage.onboarding.no_content' | t }}</p>
+    </div>
+  </div>
+{% endif %}
+
+{% comment %}JavaScript{% endcomment %}
+<script
+    type="application/json"
+    data-section-id="{{ section_id }}"
+    data-section-data
+  >
+  {
+    "text_transition": {{ atb_text_transition | json }},
+    "image_transition": {{ atb_image_transition | json }},
+    "image_slideshow_speed": {{ atb_image_slideshow_speed | json }},
+    "show_arrows": {{ atb_show_arrows | json }},
+    "show_nav_buttons": {{ atb_show_nav_buttons | json }},
+    "number_of_slides": {{ blocks.size | json }}
+  }
+</script>
+<script data-theme-editor-load-script src="{{ 'z__jsSlideshowWithText.js' | asset_url }}"></script>
+
+
+</section>
