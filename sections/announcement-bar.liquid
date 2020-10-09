@@ -111,7 +111,24 @@
     "show_close_icon": {{ section.settings.show_close_icon | json }}
   }
 </script>
-<script src="{{ 'z__jsAnnouncementBar.js' | asset_url }}"></script>
+
+
+<script>
+  function loadJs(url, callback) {
+      var e = document.createElement("script");
+      e.src = url;
+      e.type="text/javascript";
+      e.addEventListener('load', callback);
+      document.getElementsByTagName("head")[0].appendChild(e);
+    }
+
+
+    loadJs("{{ 'z__jsAnnouncementBar.js' | asset_url }}", function() {
+    	console.log('loaded announcement');
+    })
+</script>
+
+
 
 {% comment %}Schema{% endcomment %}
 {% schema %}
