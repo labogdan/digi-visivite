@@ -94,6 +94,7 @@
   {% if collection.previous_product %}<link rel="prev" href="{{ collection.previous_product }}">{% endif %}
   {% if collection.next_product %}<link rel="next" href="{{ collection.next_product }}">{% endif %}
 
+{% include 'sca.freegifts' %} 
 
   <!-- Google Ads Remarketing Tag By FeedArmy Version 2.12 START -->
 <!-- FeedArmy tutorial found at https://feedarmy.com/kb/adding-google-adwords-remarketing-tag-to-shopify/ -->
@@ -310,9 +311,17 @@
     {% section 'popup' %}
   {% endif %}
 
+
 {% if template contains 'product' or template contains 'cart' %}
   {% include 'bold-common' %}
 {% endif %}
+
+{% if request.path contains 'manage/subscription/app' %}
+  {% include 'bold-common' %}
+  {%- include 'bold-product' with product, hide_action: 'header' -%}
+  {%- include 'bold-ro-init' -%}
+{% endif %}
+
 
 
   <script>
@@ -528,18 +537,18 @@
     }
 
     function loadVendors(time) {
-      setTimeout(function() {
+      //setTimeout(function() {
         //loadJs("{{ 'vendors.js' | asset_url }}", function() {
-            console.log('loaded Vendors');
-            loadJs("{{ 'utilities.js' | asset_url }}", function() {
-              console.log('loaded Utilities');
-            })
-            loadJs("{{ 'app.js' | asset_url }}", function() {
-              console.log('loaded App');
-            })
+            //console.log('loaded Vendors');
+            //loadJs("{{ 'utilities.js' | asset_url }}", function() {
+            //  console.log('loaded Utilities');
+            //})
+            //loadJs("{{ 'app.js' | asset_url }}", function() {
+          //    console.log('loaded App');
+          //  })
         //});
 
-      }, time);
+      //}, time);
     }
 
     function loadTrustedSite(time) {
@@ -567,6 +576,13 @@
 {% include 'vendors.js' %}
 
 </script>
+
+<script defer src="{{ 'utilities.js' | asset_url }}"></script>
+<script defer src="{{ 'app.js' | asset_url }}"></script>
+
+
+
+
 
 
 
